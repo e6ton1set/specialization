@@ -8,12 +8,13 @@
 START = 0
 END = 100_000
 ONE = 1
+TWO = 2
 flag = True
 
 while True:
     num = int(input('Введите целое положительное число:\n'))
     if START < num < END:
-        for i in range(2, (num // 2) + 1):
+        for i in range(TWO, (num // TWO) + ONE):
             if num % i == 0:
                 flag = False
         break
