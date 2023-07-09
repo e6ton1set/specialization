@@ -20,7 +20,7 @@ print(dir("Hello world!"))
 # или не работают с переопределением методов в ООП.
 # Впрочем, переопределение методов — узкоспециализированная задача.
 
-help("Hello world!")
+# help("Hello world!")
 # На первый взгляд не получили ничего хороше, документации нет.
 # No Python documentation found for 'Hello world!'.
 # Use help() to get the interactive help utility.
@@ -34,4 +34,6 @@ help("Hello world!")
 # 2. Если передать в функцию имя класса, получим подробное описание его
 # работы.
 # help(str)
+
+help()
 
