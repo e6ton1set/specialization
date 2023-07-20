@@ -3,9 +3,6 @@
 # а значение — имя аргумента.
 # Если ключ не хешируем, используйте его строковое представление.
 
-nums = {'Один': 1, 'Два': 2, 'Три': 3}
-
-
 def get_kwargs_dict(**kwargs: object) -> dict[str: str]:
     res = {}
     for key, value in kwargs.items():
@@ -14,4 +11,4 @@ def get_kwargs_dict(**kwargs: object) -> dict[str: str]:
     return res
 
 
-print(get_kwargs_dict(name=['Lex', 'App'], age=22))
+print(get_kwargs_dict(name=['Lex', 'App'], age=22.33))
