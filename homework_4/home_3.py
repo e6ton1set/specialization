@@ -10,6 +10,7 @@ percent_take = 0.015
 percent_add = 0.03
 percent_tax = 0.01
 
+
 def add_bank(cash: float) -> None:
     global bank
     global count
@@ -18,6 +19,7 @@ def add_bank(cash: float) -> None:
     if count % 3 == 0:
         bank = bank + percent_add * bank
         print("начислены проценты в размере: ", percent_add * bank)
+
 
 def take_bank(cash: float) -> None:
     global bank
@@ -43,11 +45,13 @@ def exit_bank():
     print("Рады вас видетеь снова!\n")
     exit()
 
+
 def check_bank() -> int:
     while True:
         cash = int(input("Введите сумму опреации кратно 50\n"))
         if cash % 50 == 0:
             return cash
+
 
 list_operation = []
 
