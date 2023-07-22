@@ -12,6 +12,7 @@
 # � Проверку года на високосность вынести в отдельную
 # защищённую функцию.
 
+__all__ = ['check_date']
 
 def is_leap(year: int):
     return not (year % 4 != 0 or year % 100 != 0 and year % 400 != 0)

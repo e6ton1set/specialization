@@ -15,6 +15,7 @@
 
 _data = {}
 
+__all__ = ['puzzle', 'get_storage', 'show_stat', 'save_stat']
 
 def puzzle(puzzle_text: str, answers: list[str], trials: int):
     print(puzzle_text)

@@ -14,6 +14,8 @@ from sys import argv
 """Угадай число
 """
 
+__all__ = ['get_random_num']
+
 START = 0
 STOP = 100
 AMOUNT = 2
