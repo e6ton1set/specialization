@@ -1,1 +1,1 @@
-__all__ = ['task_3', 'task_6', 'task_7']
+__all__ = ['task_3', 'task_6', 'task_7', 'home_2']

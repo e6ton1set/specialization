@@ -9,6 +9,8 @@
 """queen
 """
 
+__all__ = ['if_queen_beat']
+
 field = 8
 x = []
 y = []
