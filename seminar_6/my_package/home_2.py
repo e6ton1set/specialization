@@ -6,24 +6,28 @@
 # 1 до 8 - координаты 8 ферзей. Если ферзи не бьют друг друга верните истину, а если
 # бьют - ложь.
 
+# Напишите функцию в шахматный модуль. Используйте генератор случайных чисел
+# для случайной расстановки ферзей в задаче выше. Проверяйте различный случайные
+# варианты и выведите 4 успешных расстановки.
+
+from random import randint
+
 """queen
 """
 
-__all__ = ['if_queen_beat']
-
 field = 8
-x = []
-y = []
+
+__all__ = ['if_queen_beat', 'spread_queen']
 
 
-def if_queen_beat() -> bool:
-    count = 0
-    for i in range(field):
-        new_x, new_y = [int(step) for step in input(f'Введите положение ' \
-                                                    f'фигуры {i+1} через пробел:\n').split()]
-        x.append(new_x)
-        y.append(new_y)
+def spread_queen() -> list[int]:
+    x = []
+    for _ in range(1, field + 1):
+        x.append(randint(1, field + 1))
+    return x
 
+
+def if_queen_beat(x: list[int], y: list[int]) -> bool:
     correct = True
     for i in range(field):
         for j in range(i + 1, field):
@@ -37,4 +41,6 @@ def if_queen_beat() -> bool:
 
 
 if __name__ == '__main__':
-    if_queen_beat()
+    x = spread_queen()
+    y = spread_queen()
+    print(if_queen_beat(x, y))
