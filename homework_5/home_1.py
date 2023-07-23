@@ -5,7 +5,7 @@
 path: str = 'C:\\Users\\User\\PycharmProjects\\specialization\\homework_5\\home_1.py'
 
 
-def get_path(link: str) -> tuple:
+def get_path_tuple(link: str) -> tuple:
     *route, file = link.split('\\')
     route = '\\'.join(path)
     name, exp = file.split('.')
@@ -13,5 +13,5 @@ def get_path(link: str) -> tuple:
     return res_tuple
 
 
-print(get_path(path))
-print(type(get_path(path)))
+print(get_path_tuple(path))
+print(type(get_path_tuple(path)))
