@@ -9,6 +9,14 @@
 # ✔ количество файлов, по умолчанию 42
 # ✔ Имя файла и его размер должны быть в рамках переданного диапазона.
 
+# Задание №5
+# ✔ Доработаем предыдущую задачу.
+# ✔ Создайте новую функцию которая генерирует файлы с разными расширениями.
+# ✔ Расширения и количество файлов функция принимает в качестве параметров.
+# ✔ Количество переданных расширений может быть любым.
+# ✔ Количество файлов для каждого расширения различно.
+# ✔ Внутри используйте вызов функции из прошлой задачи.
+
 from string import ascii_lowercase, digits
 from random import choices, randint
 
@@ -24,4 +32,9 @@ def make_files(exp: str, min_name_len: int = 6, max_name_len: int = 30,
             rnd_files.write(data)
 
 
-make_files(exp="txt")
+def make_exp(**kwargs):
+    for exp, amount in kwargs.items():
+        make_files(exp=exp, amount=amount)
+
+
+make_exp(txt=3, jpeg=2, doc=1)
