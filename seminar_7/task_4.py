@@ -24,12 +24,12 @@
 # (добавьте проверки).
 # ✔ Существующие файлы не должны удаляться/изменяться в случае совпадения имён.
 
-
 from string import ascii_lowercase, digits
 from random import choices, randint
 from os import path
 import os
 
+__all__ = ['make_exp', 'make_files']
 
 def check_dir(dir, **kwargs) -> None:
     if not path.exists(dir):
@@ -53,4 +53,5 @@ def make_exp(**kwargs):
         make_files(exp=exp, amount=amount)
 
 
-check_dir(r'.\\task_6', png=2, pdf=1)
+if __name__ == '__main__':
+    check_dir(r'.\\task_6', png=2, pdf=1)

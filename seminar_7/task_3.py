@@ -14,6 +14,7 @@
 
 from typing import TextIO
 
+__all__ = ['read_file']
 
 def readline_or_begin(file: TextIO) -> str:
     line = file.readline()
@@ -45,4 +46,5 @@ def read_file():
                 res_file.write(curr_name.lower() + '\t' + str(-temp) + '\n')
 
 
-read_file()
+if __name__ == '__main__':
+    read_file()

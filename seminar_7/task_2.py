@@ -8,6 +8,8 @@
 
 import random
 
+__all__ = ['fill_file']
+
 
 def generate_name():
     vowels = "аууееиоуыэюя"
@@ -36,4 +38,5 @@ def fill_file(file_name="names.txt", limit=10):
             file.write(validate_name().capitalize() + "\n")
 
 
-fill_file()
+if __name__ == '__main__':
+    fill_file()
