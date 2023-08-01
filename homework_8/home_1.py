@@ -11,6 +11,8 @@ import json
 import csv
 import pickle
 
+__all__ = ['bypass_dirs_save_to_csv_pickle']
+
 
 def bypass_dirs_save_to_csv_pickle(dir_path: str) -> None:
     dict_json = {}
