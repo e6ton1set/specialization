@@ -8,6 +8,12 @@
 # функции в json файл
 
 import cmath
+import csv
+import random
+
+SIZE = 100
+UPPER_LIMIT = 100
+LOWER_LIMIT = 1
 
 
 def find_quadratic_roots(a, b, c: any) -> None:
@@ -18,5 +24,19 @@ def find_quadratic_roots(a, b, c: any) -> None:
     print('Уравнение имеет корень {0} и {1}'.format(x1, x2))
 
 
-find_quadratic_roots(2+3j, 4, -2)
+def create_rnd_cvs(cvs_path: str) -> None:
+    rows = []
+    for _ in range(SIZE):
+        num1 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
+        num2 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
+        num3 = random.randint(LOWER_LIMIT, UPPER_LIMIT)
+        rows.append({'num1': num1, 'num2': num2, 'num3': num3})
+
+    with open(cvs_path, 'w', encoding='utf-8') as csv_file:
+        three_rnd_nums = csv.DictWriter(csv_file, fieldnames=['num1', 'num2', 'num3'], dialect='excel-tab', restval=0)
+        three_rnd_nums.writeheader()
+        three_rnd_nums.writerows(rows)
+
+
+create_rnd_cvs('rnd_nums.cvs')
 
