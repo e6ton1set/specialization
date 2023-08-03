@@ -10,12 +10,14 @@
 # Имя файла должно совпадать с именем декорируемой
 # функции.
 
+from functools import wraps
 from typing import Callable
 import json
 from os.path import exists
 
 
 def save_param_and_result_func_to_json(func: Callable) -> Callable[[list, dict], int]:
+    @wraps(func)
     def wrapper(*args, **kwargs):
         file_path = f'{func.__name__}.json'
         data = []

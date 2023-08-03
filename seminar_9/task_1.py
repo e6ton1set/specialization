@@ -28,6 +28,7 @@
 
 from typing import Callable
 import random
+from functools import wraps
 
 
 def decorator(func: Callable) -> Callable[[int, int], None]:
@@ -36,6 +37,7 @@ def decorator(func: Callable) -> Callable[[int, int], None]:
     min_steps = 1
     max_steps = 10
 
+    @wraps(func)
     def wrapper(steps: int, gues_num: int, *args, **kwargs):
         if not min_number <= gues_num <= max_number:
             gues_num = random.randint(min_number, max_number)

@@ -3,6 +3,7 @@
 # Параметр - целое число, количество запусков декорируемой
 # функции.
 
+from functools import wraps
 from typing import Callable
 
 
@@ -10,6 +11,7 @@ def param_deco(amount_calls: int) -> Callable:
     result = []
 
     def deco(func: Callable) -> list:
+        @wraps(func)
         def wrapper(*args, **kwargs):
             for _ in range(amount_calls):
                 result.append(func(*args, **kwargs))
