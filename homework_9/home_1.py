@@ -14,7 +14,7 @@ def deco_from_find_quadratic_sqrt(func: Callable[[float], float]) -> Callable[[s
     @wraps(func)
     def wrapper(csv_file_path: str) -> list[dict]:
         with open(csv_file_path, 'r', encoding='utf-8') as csv_file:
-            csv_reader = csv.reader(csv_file, dialect='excel-tab', quoting=csv.QUOTE_NONNUMERIC)
+            csv_reader = csv.reader(csv_file, dialect='excel', quoting=csv.QUOTE_NONNUMERIC)
             result = []
             for params in csv_reader:
                 cur_result = {
@@ -43,14 +43,14 @@ def deco_save_log2json(func: Callable) -> Callable[[list, dict], int]:
 def gen_rnd_float_cvs(file_path: str, min_row: int = 100, max_row: int = 1000,
                       min_float: float = -100.0, max_float: float = 100) -> None:
     with open(file_path, 'w', encoding='utf-8') as csv_file:
-        csv_writer = csv.writer(csv_file, dialect='excel-tab', quoting=csv.QUOTE_NONNUMERIC)
+        csv_writer = csv.writer(csv_file, dialect='excel', quoting=csv.QUOTE_NONNUMERIC)
         for _ in range(randint(min_row, max_row)):
             csv_writer.writerow(uniform(min_float, max_float) for _ in range(3))
 
 
 @deco_save_log2json
 @deco_from_find_quadratic_sqrt
-def find_quadratic_sqrt(a: float, b: float, c: float) -> tuple:
+def find_quadratic_sqrt(a: float, b: float, c: float) ->  float | tuple[float | str, float | str]:
     d = b ** 2 - 4 * a * c
     if d == 0:
         return -b / (2 * a)
@@ -60,6 +60,3 @@ def find_quadratic_sqrt(a: float, b: float, c: float) -> tuple:
         d = complex(d, 0)
         return str((-b + d ** 0.5) / (2 * a))[1:-1], str((-b - d ** 0.5) / (2 * a))[1:-1]
 
-
-if __name__ == '__main__':
-    deco_save_log2json(find_quadratic_sqrt(gen_rnd_float_cvs('rnd_nums.cvs')))
