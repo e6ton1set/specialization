@@ -4,6 +4,7 @@
 # ○ Декоратор, запускающий функцию нахождения корней квадратного уравнения с каждой тройкой чисел из csv файла.
 # ○ Декоратор, сохраняющий переданные параметры и результаты работы функции в json файл.
 import csv
+import json
 from functools import wraps
 from random import randint, uniform
 from typing import Callable
@@ -26,6 +27,19 @@ def deco_from_find_quadratic_sqrt(func: Callable[[float], float]) -> Callable[[s
     return wrapper
 
 
+def deco_save_log2json(func: Callable) -> Callable[[list, dict], int]:
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        file_path = f'{func.__name__}.json'
+        result = func(*args, **kwargs)
+        with open(file_path, 'w', encoding='utf-8') as json_file:
+            json.dump(result, json_file, indent=2, ensure_ascii=False)
+
+        return result
+
+    return wrapper
+
+
 def gen_rnd_float_cvs(file_path: str, min_row: int = 100, max_row: int = 1000,
                       min_float: float = -100.0, max_float: float = 100) -> None:
     with open(file_path, 'w', encoding='utf-8') as csv_file:
@@ -34,6 +48,7 @@ def gen_rnd_float_cvs(file_path: str, min_row: int = 100, max_row: int = 1000,
             csv_writer.writerow(uniform(min_float, max_float) for _ in range(3))
 
 
+@deco_save_log2json
 @deco_from_find_quadratic_sqrt
 def find_quadratic_sqrt(a: float, b: float, c: float) -> tuple:
     d = b ** 2 - 4 * a * c
@@ -47,4 +62,4 @@ def find_quadratic_sqrt(a: float, b: float, c: float) -> tuple:
 
 
 if __name__ == '__main__':
-    print(gen_rnd_float_cvs('rnd_nums.cvs'))
+    deco_save_log2json(find_quadratic_sqrt(gen_rnd_float_cvs('rnd_nums.cvs')))
