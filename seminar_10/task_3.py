@@ -36,15 +36,17 @@ class Human:
                f'\nОтчество:\t{self.patronymic:>10}'
 
 
-human_1 = Human('Alise', '---', 'Eivor', 33, 'Doctor', Gender.female)
-print(f'{human_1.get_age() = }')
-human_1.birthday()
-print(f'{human_1.get_age() = }')
-print(human_1.show_full_name())
-print('======================================================')
-human_2 = Human('Bob', '---', 'Jake', 28, 'Police', Gender.female)
-print(f'{human_2.get_age() = }')
-human_2.birthday()
-human_2.birthday()
-print(f'{human_2.get_age() = }')
-print(human_2.show_full_name())
+if __name__ == '__main__':
+    human_1 = Human('Alise', '---', 'Eivor', 33, 'Doctor', Gender.female)
+    print(f'{human_1.get_age() = }')
+    human_1.birthday()
+    print(f'{human_1.get_age() = }')
+    print(human_1.show_full_name())
+    print('======================================================')
+    human_2 = Human('Bob', '---', 'Jake', 28, 'Police', Gender.female)
+    print(f'{human_2.get_age() = }')
+    human_2.birthday()
+    human_2.birthday()
+    print(f'{human_2.get_age() = }')
+    print(human_2.show_full_name())
+
