@@ -30,4 +30,7 @@ class Worker(Human):
 
 
 worker_1 = Worker('Alise', 'Grace', 'Eivor', 33, 'Doctor', Gender.female, 777_777)
-print(f'{worker_1.get_level() = }')
+print(f'{worker_1.get_level() = }\n{hash(worker_1) = }')
+
+worker_2 = Worker('Alise', 'Grace', 'Eivor', 33, 'Doctor', Gender.female, 777_777)
+print(f'{worker_2.get_level() = }\n{hash(worker_2) = }')
