@@ -8,6 +8,11 @@
 # Задание №3
 # Добавьте к задачам 1 и 2 строки документации для классов.
 
+# Задание №4
+# Доработаем класс Архив из задачи 2.
+# Добавьте методы представления экземпляра для программиста
+# и для пользователя.
+
 
 class Archive:
     """
@@ -16,7 +21,6 @@ class Archive:
     _instance = None
 
     def __init__(self, text: str, num: int | float | complex):
-        print('Start __init__')
         self.text = text
         self.num = num
 
@@ -26,7 +30,6 @@ class Archive:
         :param args:
         :param kwargs:
         """
-        print('Start __new__')
 
         if cls._instance is None:
             cls._instance = super().__new__(cls)
@@ -38,11 +41,21 @@ class Archive:
 
         return cls._instance
 
+    def __str__(self):
+        return f'Text archive -> {self.archive_text}\n' \
+               f'Nums archive -> {self.archive_nums}'
 
-# item_1 = Archive('text1', 55)
-# item_2 = Archive('text2', 254785.1054)
-# item_3 = Archive('text3', 0o11010010101)
-# item_3 = Archive('text3', 24343424)
+    def __repr__(self):
+        return f'Текущее значение числа: {self.num}\nТекущее значение строки: {self.text}'
+
+
+item_1 = Archive('text1', 55)
+item_2 = Archive('text2', 254785.1054)
+item_3 = Archive('text3', 0o11010010101)
+item_3 = Archive('text3', 24343424)
 # print(Archive._instance.archive_nums)
 # print(Archive._instance.archive_text)
-print(Archive.__new__.__doc__)
+# print(Archive.__new__.__doc__)
+
+# print(item_1)
+print(repr(item_3))
