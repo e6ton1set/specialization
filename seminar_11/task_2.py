@@ -5,7 +5,14 @@
 # созданных экземпляров сохраняются в пару списковархивов
 # list-архивы также являются свойствами экземпляра
 
+# Задание №3
+# Добавьте к задачам 1 и 2 строки документации для классов.
+
+
 class Archive:
+    """
+    Одиночный класс для хранения данных о последнем экземляре
+    """
     _instance = None
 
     def __init__(self, text: str, num: int | float | complex):
@@ -14,6 +21,11 @@ class Archive:
         self.num = num
 
     def __new__(cls, *args, **kwargs):
+        """
+        Метод, который сохраняет в list все значения экземляра до текущего (не включительно)
+        :param args:
+        :param kwargs:
+        """
         print('Start __new__')
 
         if cls._instance is None:
@@ -27,9 +39,10 @@ class Archive:
         return cls._instance
 
 
-item_1 = Archive('text1', 55)
-item_2 = Archive('text2', 254785.1054)
-item_3 = Archive('text3', 0o11010010101)
-item_3 = Archive('text3', 24343424)
-print(Archive._instance.archive_nums)
-print(Archive._instance.archive_text)
+# item_1 = Archive('text1', 55)
+# item_2 = Archive('text2', 254785.1054)
+# item_3 = Archive('text3', 0o11010010101)
+# item_3 = Archive('text3', 24343424)
+# print(Archive._instance.archive_nums)
+# print(Archive._instance.archive_text)
+print(Archive.__new__.__doc__)
