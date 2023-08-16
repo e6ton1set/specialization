@@ -22,9 +22,10 @@ class Rectangle:
         return self.length * self.width
 
 
-rect_1 = Rectangle(1, 2)
-rect_2 = Rectangle(5)
-print(f'{rect_1.get_perimeter() = }'
-      f'\n{rect_1.get_square() = }')
-print(f'{rect_2.get_perimeter() = }'
-      f'\n{rect_2.get_square() = }')
+if __name__ == '__main__':
+    rect_1 = Rectangle(1, 2)
+    rect_2 = Rectangle(5)
+    print(f'{rect_1.get_perimeter() = }'
+          f'\n{rect_1.get_square() = }')
+    print(f'{rect_2.get_perimeter() = }'
+          f'\n{rect_2.get_square() = }')
