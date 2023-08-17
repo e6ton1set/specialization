@@ -19,6 +19,7 @@ class RectanglePro(Rectangle):
     The class extends the capabilities of the Triangle class (from seminar_10.task_2) :
     difference, addition and comparison
     """
+
     def __add__(self, other):
         """
         Addition method
@@ -57,6 +58,13 @@ class RectanglePro(Rectangle):
         """
         return self.get_square() >= other.get_square()
 
+    def __str__(self):
+        """
+        Method for displaying information to the user
+        """
+        return f'P obj -> {self.get_perimeter()}\n' \
+               f'S obj -> {self.get_square()} '
+
 
 rect_1 = RectanglePro(2, 3)
 rect_2 = RectanglePro(5, 6)
@@ -68,6 +76,7 @@ rect_2 = RectanglePro(5, 6)
 # print(rect_sub.get_perimeter())
 # print(rect_sum.width, rect_sum.length)
 # print(rect_sub.width, rect_sub.length)
-print(rect_1.get_square(), rect_2.get_square())
-print(rect_1 != rect_2)
-print(RectanglePro.__doc__)
+# print(rect_1.get_square(), rect_2.get_square())
+# print(rect_1 != rect_2)
+# print(RectanglePro.__doc__)
+print(rect_1)
