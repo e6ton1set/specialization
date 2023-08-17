@@ -42,10 +42,16 @@ class Archive:
         return cls._instance
 
     def __str__(self):
+        """
+        Method for displaying information to the user
+        """
         return f'Text archive -> {self.archive_text}\n' \
                f'Nums archive -> {self.archive_nums}'
 
     def __repr__(self):
+        """
+        A method for displaying information to a colleague
+        """
         return f'Текущее значение числа: {self.num}\nТекущее значение строки: {self.text}'
 
 
