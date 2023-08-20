@@ -6,6 +6,13 @@
 # Добавьте метод для просмотра ранее вызываемых значений и
 # их факториалов.
 
+# Задание №2
+# Доработаем задачу 1.
+# Создайте менеджер контекста, который при выходе
+# сохраняет значения в JSON файл.
+
+
+import json
 from collections import deque
 
 
@@ -23,9 +30,20 @@ class Factorial:
     def show_history(self):
         return self._history
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        data = {}
+        while self._history:
+            data.update(self._history.popleft())
+        with open('history_operation.json', 'w', encoding='utf-8') as json_file:
+            json.dump(data, json_file)
+
 
 if __name__ == '__main__':
     test_factorial = Factorial(2)
-    test_factorial(11)
-    test_factorial(2)
-    print(test_factorial.show_history())
+    with test_factorial as f:
+        test_factorial(22)
+        test_factorial(6)
+        print(test_factorial.show_history())
