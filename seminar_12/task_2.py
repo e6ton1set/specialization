@@ -31,6 +31,6 @@ class FactorialRange:
 
 if __name__ == '__main__':
     fact_range = FactorialRange(11, 2)
-    for i in fact_range:
-        print(i)
+    for i, res in enumerate(fact_range, 10):
+        print(i, res)
 
