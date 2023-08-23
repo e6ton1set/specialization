@@ -20,7 +20,7 @@ def parse():
                                      description='выводит числа Фибоначчи',
                                      epilog='Используйте модуль для получения числовой последовательности '
                                             'Фибонначи до вашего числа. '
-                                            'Пример запуска: python home_1.py -d 2 -m ноябрь -w четверг')
+                                            'Пример запуска: python home_1.py -n 12')
     parser.add_argument('-n', '--number', default=1, help='Граница расчёта чесел Фибонначи')
     args = parser.parse_args()
     return get_fibonacci(f'{args.number}')
