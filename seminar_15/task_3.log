@@ -1,0 +1,2 @@
+INFO - 2023-08-23 15:16:16,603 - division: {'args': (10, 2)}. result: 5.0
+INFO - 2023-08-23 15:16:16,607 - division: {'args': (10, 0)}. result: inf
