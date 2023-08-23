@@ -9,9 +9,21 @@
 
 import logging
 from typing import Callable
+import argparse
 
 logging.basicConfig(filename='home_1.log', encoding='utf-8', level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+def parse():
+    parser = argparse.ArgumentParser(prog='get_fibonacci',
+                                     description='выводит числа Фибоначчи',
+                                     epilog='Используйте модуль для получения числовой последовательности '
+                                            'Фибонначи до вашего числа. '
+                                            'Пример запуска: python home_1.py -d 2 -m ноябрь -w четверг')
+    parser.add_argument('-n', '--number', default=1, help='Граница расчёта чесел Фибонначи')
+    args = parser.parse_args()
+    return get_fibonacci(f'{args.number}')
 
 
 def add2log(func: Callable):
@@ -24,7 +36,8 @@ def add2log(func: Callable):
 
 
 @add2log
-def get_fibonacci(num: int) -> list[int]:
+def get_fibonacci(num: str) -> list[int]:
+    num = int(num)
     fib_list = [0, 1, 1]
     fib1 = 1
     fib2 = 1
@@ -38,4 +51,4 @@ def get_fibonacci(num: int) -> list[int]:
 
 
 if __name__ == '__main__':
-    print(get_fibonacci(num=20))
+    print(parse())
