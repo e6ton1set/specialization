@@ -41,11 +41,11 @@ class Project:
                 if user == test_user:
                     self.admin = user
         else:
-            raise AccessException
+            raise AccessException(name, user_id)
 
     def add_user(self, name: str, user_id: int, user_level: int):
         if user_level > self.admin.user_level:
-            raise LevelException
+            raise LevelException(user_level, self.admin)
         new_user = User(name, user_id, user_level)
         self.users.add(new_user)
         self.save_users()
@@ -60,6 +60,4 @@ class Project:
 if __name__ == '__main__':
     proj_1 = Project('users.json')
     proj_1.entrance('Анастасия', 143)
-    proj_1.add_user('Геша', 150, 1)
-    proj_1.add_user('Ольга', 151, 1)
-    print(*proj_1.users, sep='\n')
+    proj_1.add_user('Вася', 170, 7)
