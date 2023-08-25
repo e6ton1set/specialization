@@ -1,12 +1,22 @@
 [
   {
-    "access_level": 2,
-    "user_id": "000142",
-    "name": "Руслан"
+    "name": "Анастасия",
+    "user_id": 143,
+    "access_level": 3
   },
   {
-    "access_level": 3,
-    "user_id": "000143",
-    "name": "Анастасия"
+    "name": "Ольга",
+    "user_id": 151,
+    "access_level": 1
+  },
+  {
+    "name": "Руслан",
+    "user_id": 142,
+    "access_level": 2
+  },
+  {
+    "name": "Геша",
+    "user_id": 150,
+    "access_level": 1
   }
 ]

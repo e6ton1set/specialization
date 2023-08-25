@@ -8,7 +8,6 @@
 # Отдельно напишите функцию, которая считывает информацию
 # из JSON файла и формирует множество пользователей.
 
-from exception_task_3 import LevelException, AccessException
 import json
 from typing import Set
 
@@ -19,8 +18,14 @@ class User:
         self.user_id = user_id
         self.user_level = user_level
 
+    def __eq__(self, other):
+        return self.name == other.name and self.user_id == other.user_id
+
+    def __hash__(self):
+        return hash((self.name, self.user_id))
+
     def __str__(self):
-        return f'{self.name}, id: {self.user_id}, level: {self.user_level}'
+        return f'name: {self.name}, id: {self.user_id}, level: {self.user_level}'
 
 
 def load_users_json(json_file_path: str) -> Set[User]:
