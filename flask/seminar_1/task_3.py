@@ -22,9 +22,10 @@ def contact():
     return 'contact'
 
 
-@app.route('/<int:num_1>/<int:num_2>')
+@app.route('/<int:num_1>/<int:num_2/>')
 def sum_nums(num_1: int, num_2: int) -> str:
     return str(num_1 + num_2)
+
 
 if __name__ == '__main__':
     app.run()
