@@ -8,6 +8,8 @@
 
 from flask import Flask, render_template
 
+__all__=['app']
+
 app = Flask(__name__)
 
 
