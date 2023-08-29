@@ -5,9 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>News To Day</title>
 </head>
 <body>
-
+    {% for news in news_block%}
+    <div class="news">
+        <h2>{{ news.title }}</h2>
+        <p>{{ news.description }}</p>
+        {{ news.date_time }}
+    </div>
+    {% endfor %}
 </body>
 </html>
