@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+  <form action="#" method="post">
+    <label> Введите email </label>
+    <input type="email" name="auth_email" placeholder="Введите email" required>
+    <label> Введите пароль </label>
+    <input type="password" name="auth_pass" placeholder="Введите пароль" required>
+    <button type="submit" name="form_auth_sumbit" >Войти</button>
+  </form>
+{% endblock %}
