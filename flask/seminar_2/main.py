@@ -1,4 +1,4 @@
-# Задания прописаны на странице base.html
+# Задания прописаны на странице login.html
 
 from pathlib import PurePath, Path
 from venv import logger
@@ -12,7 +12,7 @@ app.secret_key = b'5f214cacbd30c2ae4784b520f17912ae0d5d8c16ae98128e3f54954622126
 
 @app.route('/')
 def base():
-    return render_template('base.html')
+    return render_template('login.html')
 
 
 @app.route('/next/')
