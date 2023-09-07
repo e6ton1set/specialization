@@ -24,7 +24,9 @@ urls = [
 
 
 async def download(url):
-    async with aiohttp.ClientSession() as session:
+    # для iOS
+    # async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=False)) as session:
+    async with aiohttp.ClientSession(ssl=False) as session:
         async with session.get(url) as response:
             text = await response.text()
 
