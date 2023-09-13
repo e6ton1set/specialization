@@ -1,4 +1,3 @@
-
 from pathlib import Path
 import requests
 import threading
@@ -14,11 +13,11 @@ final_multiprocessing = 0.0
 
 
 data_images = []
-with open('images.txt', 'r') as images:
+with open("images.txt", "r") as images:
     for image in images.readlines():
         data_images.append(image.strip())
 
-image_path = Path('./images/')
+image_path = Path("./images/")
 
 
 def download_image(url):
@@ -36,7 +35,9 @@ def download_image(url):
 
 async def download_image_async(url):
     start_time = time.time()
-    response = await asyncio.get_event_loop().run_in_executor(None, requests.get, url, {"stream": True})
+    response = await asyncio.get_event_loop().run_in_executor(
+        None, requests.get, url, {"stream": True}
+    )
     filename = image_path.joinpath(os.path.basename(url))
     with open(filename, "wb") as f:
         for chunk in response.iter_content(chunk_size=1024):
@@ -88,7 +89,9 @@ async def download_images_asyncio(urls):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Парсер изображений по URL-адресам")
-    parser.add_argument("--urls", nargs="+", help="Список URL-адресов для загрузки изображений")
+    parser.add_argument(
+        "--urls", nargs="+", help="Список URL-адресов для загрузки изображений"
+    )
     args = parser.parse_args()
 
     urls = args.urls
