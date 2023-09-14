@@ -8,6 +8,12 @@
 # Создайте маршрут для добавления нового пользователя (метод POST).
 # Реализуйте валидацию данных запроса и ответа.
 
+# Задание №4
+# Создать API для обновления информации о пользователе в базе данных.
+# Приложение должно иметь возможность принимать PUT запросы с данными
+# пользователей и обновлять их в базе данных.
+
+
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -49,6 +55,18 @@ async def add_user(new_user: UserIn):
                       )
                  )
     return users
+
+
+@app.put('/users/', response_model=User)
+async def edit_user(new_user: UserIn, user_id: int):
+    for i in range(0, len(users)):
+        if users[i].user_id == user_id:
+            current_user = users[user_id - 1]
+            current_user.name = new_user.name
+            current_user.email = new_user.email
+            current_user.password = hash_password(new_user.password)
+            return current_user
+    raise HTTPException(status_code=404, detail="User not found.\nTry again.")
 
 
 if __name__ == '__main__':
