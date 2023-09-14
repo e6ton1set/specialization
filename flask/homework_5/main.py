@@ -13,6 +13,11 @@
 # Приложение должно иметь возможность принимать PUT запросы с данными
 # пользователей и обновлять их в базе данных.
 
+# Задание №5
+# Создать API для удаления информации о пользователе из базы данных.
+# Приложение должно иметь возможность принимать DELETE запросы и
+# удалять информацию о пользователе из базы данных.
+
 
 import uvicorn
 from fastapi import FastAPI, HTTPException
@@ -67,6 +72,16 @@ async def edit_user(new_user: UserIn, user_id: int):
             current_user.password = hash_password(new_user.password)
             return current_user
     raise HTTPException(status_code=404, detail="User not found.\nTry again.")
+
+
+@app.delete("/users/", response_model=dict)
+async def delete_user(delete_id: int):
+    for i in (0, len(users)):
+        if users[i].user_id == delete_id:
+            users.remove(users[i])
+            return {"message": f"the user ID {delete_id} was deleted"}
+        else:
+            raise HTTPException(status_code=404, detail="User not found.\nTry again.")
 
 
 if __name__ == '__main__':
