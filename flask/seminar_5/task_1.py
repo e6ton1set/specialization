@@ -59,7 +59,7 @@ async def edit_task(new_task: TaskIn, task_id: int):
 
 
 @app.delete('/tasks/', response_model=dict)
-async def edit_task(task_id: int):
+async def del_task(task_id: int):
     for i in range(0, len(tasks)):
         if tasks[i].task_id == task_id:
             tasks.remove(tasks[i])
