@@ -1,0 +1,121 @@
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+Not Found: /ly
+"GET /ly HTTP/1.1" 404 2412
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /about HTTP/1.1" 301 0
+"GET /about/ HTTP/1.1" 200 27
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /about/ HTTP/1.1" 200 23
+Not Found: /docs
+"GET /docs HTTP/1.1" 404 2418
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Получен доступ к странице index. Адрес запроса <WSGIRequest: GET '/'>
+"GET / HTTP/1.1" 200 13
+Получен доступ к странице index. Адрес запроса <WSGIRequest: GET '/about/'>
+"GET /about/ HTTP/1.1" 200 23
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Получен доступ к странице index. Адрес запроса <WSGIRequest: GET '/'>
+"GET / HTTP/1.1" 200 13
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py", line 20, in about
+    logger.debug(f'Получен доступ к странице index. Адрес запроса {request}', encoding='utf-8')
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1477, in debug
+    self._log(DEBUG, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'encoding'
+"GET /about/ HTTP/1.1" 500 70980
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Получен доступ к странице index. Адрес запроса <WSGIRequest: GET '/'>
+"GET / HTTP/1.1" 200 13
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 27
+C:\Users\User\PycharmProjects\specialization\django\lection_1\project\project\settings.py changed, reloading.
+INFO 2023-09-19 17:08:44,254 autoreload 1268 2088 Watching for file changes with StatReloader
+INFO 2023-09-19 17:08:45,339 views 1268 3148 Получен доступ к странице index. Адрес запроса <WSGIRequest: GET '/'>
+INFO 2023-09-19 17:08:45,340 basehttp 1268 3148 "GET / HTTP/1.1" 200 13
+ERROR 2023-09-19 17:08:49,807 views 1268 3148 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-09-19 17:08:49,809 basehttp 1268 3148 "GET /about/ HTTP/1.1" 200 27
+INFO 2023-09-19 17:10:04,058 autoreload 1268 2088 C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+INFO 2023-09-19 17:10:04,545 autoreload 3100 3116 Watching for file changes with StatReloader
+INFO 2023-09-19 17:10:06,233 views 3100 13868 Get / 
+INFO 2023-09-19 17:10:06,234 basehttp 3100 13868 "GET / HTTP/1.1" 200 13
+INFO 2023-09-19 17:10:18,759 views 3100 2104 Get / 
+INFO 2023-09-19 17:10:18,760 basehttp 3100 2104 "GET / HTTP/1.1" 200 13
+WARNING 2023-09-19 17:10:19,087 log 3100 2104 Not Found: /favicon.ico
+WARNING 2023-09-19 17:10:19,088 basehttp 3100 2104 "GET /favicon.ico HTTP/1.1" 404 2439
+ERROR 2023-09-19 17:10:21,368 views 3100 2104 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-09-19 17:10:21,370 basehttp 3100 2104 "GET /about/ HTTP/1.1" 200 27
+INFO 2023-09-19 17:10:37,204 views 3100 2104 Get / 
+INFO 2023-09-19 17:10:37,205 basehttp 3100 2104 "GET / HTTP/1.1" 200 13
+INFO 2023-09-19 17:10:38,593 views 3100 2104 Get / 
+INFO 2023-09-19 17:10:38,594 basehttp 3100 2104 "GET / HTTP/1.1" 200 13
+INFO 2023-09-19 17:10:39,615 views 3100 2104 Get / 
+INFO 2023-09-19 17:10:39,615 basehttp 3100 2104 "GET / HTTP/1.1" 200 13
+INFO 2023-09-19 17:12:08,829 autoreload 3100 3116 C:\Users\User\PycharmProjects\specialization\django\lection_1\project\project\urls.py changed, reloading.
+INFO 2023-09-19 17:12:09,304 autoreload 9468 6884 Watching for file changes with StatReloader
+WARNING 2023-09-19 17:12:11,609 log 9468 7300 Not Found: /
+WARNING 2023-09-19 17:12:11,610 basehttp 9468 7300 "GET / HTTP/1.1" 404 2167
+INFO 2023-09-19 17:12:16,546 basehttp 9468 7300 "GET /prefix HTTP/1.1" 301 0
+INFO 2023-09-19 17:12:16,550 views 9468 13116 Get / 
+INFO 2023-09-19 17:12:16,551 basehttp 9468 13116 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2023-09-19 17:12:20,862 basehttp 9468 13116 "GET /prefix/about HTTP/1.1" 301 0
+ERROR 2023-09-19 17:12:20,867 views 9468 3432 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py", line 15, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2023-09-19 17:12:20,869 basehttp 9468 3432 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2023-09-19 17:13:08,809 autoreload 9468 6884 C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
+INFO 2023-09-19 17:13:09,271 autoreload 2604 8100 Watching for file changes with StatReloader
