@@ -1,0 +1,6 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 22
+Game 2 is used
+"GET /games/game2/ HTTP/1.1" 200 43
+Game 1 is used
+"GET /games/game1/ HTTP/1.1" 200 23
