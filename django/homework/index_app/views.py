@@ -41,7 +41,7 @@ def index(request):
                     <div class="collapse navbar-collapse" id="navbarNav">
                          <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/about">Обо мне</a>
+                                <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/about/">Обо мне</a>
                             </li>
                         </ul>
                      </div>
@@ -65,7 +65,7 @@ def index(request):
 
 
 def about(request):
-    index_html = """
+    about_html = """
     <!doctype html>
     <html lang="ru">
         <head>
@@ -108,10 +108,12 @@ def about(request):
             </nav>
             <div class="card text-center cohabitation">
                 <div class="card-body">
-                    <h5 class="card-title">Начнём с нескольких фактов</h5>
-                    <p class="card-text">Мне 30 лет</p>
-                    <p class="card-text">Живу в г. Челябинск</p>
-                    <p class="card-text">Учусь в GB с 07.08.2022</p>
+                    <h5 class="card-title">Начнём с нескольких фактов:</h5>
+                        <ul> 
+                            <p class="card-text">Мне 30 лет</p>
+                            <p class="card-text">Живу в г. Челябинск</p>
+                            <p class="card-text">Учусь в GB с 07.08.2022</p>
+                        </ul>
                 </div>
             </div>
             <style>
@@ -122,4 +124,4 @@ def about(request):
         </body>
     </html>
     """
-    return HttpResponse(index_html)
+    return HttpResponse(about_html)
