@@ -4,3 +4,11 @@ Game 2 is used
 "GET /games/game2/ HTTP/1.1" 200 43
 Game 1 is used
 "GET /games/game1/ HTTP/1.1" 200 23
+INFO 2023-09-21 17:15:00,732 autoreload 792 12324 Watching for file changes with StatReloader
+INFO 2023-09-21 17:15:01,686 basehttp 792 12648 "GET / HTTP/1.1" 200 22
+WARNING 2023-09-21 17:15:01,856 log 792 12648 Not Found: /favicon.ico
+WARNING 2023-09-21 17:15:01,857 basehttp 792 12648 "GET /favicon.ico HTTP/1.1" 404 2378
+INFO 2023-09-21 17:15:05,124 views 792 12648 Game 2 is used
+INFO 2023-09-21 17:15:05,125 basehttp 792 12648 "GET /games/game2/ HTTP/1.1" 200 43
+INFO 2023-09-21 17:15:06,510 views 792 12648 Game 2 is used
+INFO 2023-09-21 17:15:06,511 basehttp 792 12648 "GET /games/game2/ HTTP/1.1" 200 43

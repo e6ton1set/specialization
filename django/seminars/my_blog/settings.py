@@ -127,12 +127,23 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process} {thread} {message}',
+            'style': '{',
+        },
+    },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
         }, 'file': {
             'class': 'logging.FileHandler',
             'filename': './log/my_blog.log',
+            'formatter': 'verbose',
         },
     },
     'loggers': {
