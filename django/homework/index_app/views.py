@@ -1,11 +1,14 @@
-from django.shortcuts import render
 from django.http import HttpResponse
-
+import logging
 
 # Create your views here.
 
+logging.basicConfig(encoding="utf-8")
+logger = logging.getLogger(__name__)
+
 
 def index(request):
+    logger.info("page visited -> index")
     index_html = """
     <!doctype html>
     <html lang="ru">
@@ -65,6 +68,7 @@ def index(request):
 
 
 def about(request):
+    logger.info("page visited -> /about")
     about_html = """
     <!doctype html>
     <html lang="ru">
