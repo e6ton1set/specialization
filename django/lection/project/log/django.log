@@ -119,3 +119,8 @@ ZeroDivisionError: division by zero
 INFO 2023-09-19 17:12:20,869 basehttp 9468 3432 "GET /prefix/about/ HTTP/1.1" 200 27
 INFO 2023-09-19 17:13:08,809 autoreload 9468 6884 C:\Users\User\PycharmProjects\specialization\django\lection_1\project\myapp\views.py changed, reloading.
 INFO 2023-09-19 17:13:09,271 autoreload 2604 8100 Watching for file changes with StatReloader
+INFO 2023-09-22 17:22:54,462 autoreload 5700 6112 Watching for file changes with StatReloader
+WARNING 2023-09-22 17:22:57,478 log 5700 6272 Not Found: /
+WARNING 2023-09-22 17:22:57,479 basehttp 5700 6272 "GET / HTTP/1.1" 404 2167
+WARNING 2023-09-22 17:22:57,577 log 5700 6272 Not Found: /favicon.ico
+WARNING 2023-09-22 17:22:57,578 basehttp 5700 6272 "GET /favicon.ico HTTP/1.1" 404 2218
