@@ -5,6 +5,10 @@ from base_blog_app.models import Author, Article
 logger = logging.getLogger(__name__)
 
 
+def index(request):
+    return HttpResponse(f"Index HTML")
+
+
 def author_read(request):
     logger.info(f"Чтение авторов (подробности: {request}")
     authors = Author.objects.all()

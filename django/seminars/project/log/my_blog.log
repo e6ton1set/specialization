@@ -1,0 +1,46 @@
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2276
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2327
+INFO "GET /author HTTP/1.1" 301 0
+INFO Чтение авторов (подробности: <WSGIRequest: GET '/author/'>
+INFO "GET /author/ HTTP/1.1" 200 0
+WARNING Not Found: /article
+WARNING "GET /article HTTP/1.1" 404 2315
+INFO "GET /articles HTTP/1.1" 301 0
+INFO Чтение авторов (подробности: <WSGIRequest: GET '/articles/'>
+INFO "GET /articles/ HTTP/1.1" 200 0
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\my_blog\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2427
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2376
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 33
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2822
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
