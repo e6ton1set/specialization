@@ -1,0 +1,235 @@
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO "GET / HTTP/1.1" 200 22
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO "GET / HTTP/1.1" 200 22
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 8
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 8
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 8
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO Used eagle_or_tails
+ERROR Internal Server Error: /test/game1/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 24, in eagle_or_tails
+    return HttpResponse(**data)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\http\response.py", line 374, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: HttpResponseBase.__init__() got an unexpected keyword argument 'Îð¸ë'
+ERROR "GET /test/game1/ HTTP/1.1" 500 72539
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 18
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO "GET / HTTP/1.1" 200 22
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2483
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 32
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 82
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 48
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO "GET / HTTP/1.1" 200 22
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2483
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94
+INFO Used eagle_or_tails
+INFO "GET /test/game1/ HTTP/1.1" 200 94

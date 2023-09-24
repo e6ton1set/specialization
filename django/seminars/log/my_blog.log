@@ -12,3 +12,474 @@ INFO 2023-09-21 17:15:05,124 views 792 12648 Game 2 is used
 INFO 2023-09-21 17:15:05,125 basehttp 792 12648 "GET /games/game2/ HTTP/1.1" 200 43
 INFO 2023-09-21 17:15:06,510 views 792 12648 Game 2 is used
 INFO 2023-09-21 17:15:06,511 basehttp 792 12648 "GET /games/game2/ HTTP/1.1" 200 43
+INFO 2023-09-24 15:58:17,168 autoreload 2544 9860 Watching for file changes with StatReloader
+INFO 2023-09-24 15:58:20,132 basehttp 2544 12036 "GET / HTTP/1.1" 200 22
+WARNING 2023-09-24 15:58:20,235 log 2544 12036 Not Found: /favicon.ico
+WARNING 2023-09-24 15:58:20,236 basehttp 2544 12036 "GET /favicon.ico HTTP/1.1" 404 2483
+INFO 2023-09-24 15:58:25,182 views 2544 12800 Game 2 is used
+INFO 2023-09-24 15:58:25,183 basehttp 2544 12800 "GET /games/game2/ HTTP/1.1" 200 43
+INFO 2023-09-24 15:58:31,181 basehttp 2544 12800 "GET /test HTTP/1.1" 301 0
+INFO 2023-09-24 15:58:31,186 basehttp 2544 12804 "GET /test/ HTTP/1.1" 200 13
+INFO 2023-09-24 15:59:02,916 basehttp 2544 12804 "GET /test/test HTTP/1.1" 301 0
+ERROR 2023-09-24 15:59:02,998 log 2544 12888 Internal Server Error: /test/test/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 22, in eagle_or_tails
+    res_w.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-24 15:59:03,003 basehttp 2544 12888 "GET /test/test/ HTTP/1.1" 500 146762
+INFO 2023-09-24 15:59:45,270 autoreload 2544 9860 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO 2023-09-24 15:59:45,708 autoreload 12940 13012 Watching for file changes with StatReloader
+INFO 2023-09-24 15:59:47,159 basehttp 12940 11500 "GET / HTTP/1.1" 200 22
+ERROR 2023-09-24 15:59:49,415 log 12940 11500 Internal Server Error: /test/test/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 22, in eagle_or_tails
+    res_w.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-24 15:59:49,421 basehttp 12940 11500 "GET /test/test/ HTTP/1.1" 500 146899
+INFO 2023-09-24 16:00:22,314 autoreload 12940 13012 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO 2023-09-24 16:00:22,773 autoreload 12556 12884 Watching for file changes with StatReloader
+ERROR 2023-09-24 16:00:43,307 log 12556 1460 Internal Server Error: /test/test/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 22, in eagle_or_tails
+    res_w.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-24 16:00:43,315 basehttp 12556 1460 "GET /test/test/ HTTP/1.1" 500 146919
+INFO 2023-09-24 16:01:16,724 autoreload 12556 12884 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\urls.py changed, reloading.
+INFO 2023-09-24 16:01:17,171 autoreload 4828 13164 Watching for file changes with StatReloader
+INFO 2023-09-24 16:01:18,304 basehttp 4828 4372 "GET / HTTP/1.1" 200 22
+INFO 2023-09-24 16:01:25,097 basehttp 4828 4372 "GET /test/game1 HTTP/1.1" 301 0
+ERROR 2023-09-24 16:01:25,140 log 4828 11408 Internal Server Error: /test/game1/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 22, in eagle_or_tails
+    res_w.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-24 16:01:25,145 basehttp 4828 11408 "GET /test/game1/ HTTP/1.1" 500 146772
+INFO 2023-09-24 16:02:54,245 autoreload 4828 13164 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:02:54,748 autoreload 12716 10688 Watching for file changes with StatReloader
+INFO 2023-09-24 16:03:04,150 basehttp 12716 12916 "GET / HTTP/1.1" 200 22
+ERROR 2023-09-24 16:03:06,582 log 12716 12916 Internal Server Error: /test/game1/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 22, in eagle_or_tails
+    EagleTails.save(res_w)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1821, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+ERROR 2023-09-24 16:03:06,590 basehttp 12716 12916 "GET /test/game1/ HTTP/1.1" 500 146969
+INFO 2023-09-24 16:07:21,735 autoreload 12716 10688 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:07:22,244 autoreload 12804 12808 Watching for file changes with StatReloader
+INFO 2023-09-24 16:13:35,942 autoreload 12804 12808 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:13:36,434 autoreload 13164 7368 Watching for file changes with StatReloader
+INFO 2023-09-24 16:14:30,146 autoreload 13164 7368 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO 2023-09-24 16:14:30,664 autoreload 1288 9560 Watching for file changes with StatReloader
+INFO 2023-09-24 16:14:44,930 basehttp 1288 6032 "GET / HTTP/1.1" 200 22
+INFO 2023-09-24 16:14:48,121 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:51,856 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:52,686 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:53,073 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:53,312 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:53,494 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:53,687 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:53,864 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:14:54,056 basehttp 1288 6032 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:15:23,589 autoreload 1288 9560 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
+INFO 2023-09-24 16:15:24,043 autoreload 1636 11900 Watching for file changes with StatReloader
+INFO 2023-09-24 16:16:49,224 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:49,676 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:49,873 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,047 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,230 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,397 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,576 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,760 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:50,929 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,094 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,287 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,472 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,647 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,823 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:51,982 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:16:52,159 basehttp 1636 3068 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:17:55,630 autoreload 1636 11900 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:17:56,072 autoreload 6864 10212 Watching for file changes with StatReloader
+INFO 2023-09-24 16:18:00,528 autoreload 6864 10212 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:18:00,994 autoreload 5832 5364 Watching for file changes with StatReloader
+INFO 2023-09-24 16:18:02,076 basehttp 5832 4080 "GET / HTTP/1.1" 200 22
+INFO 2023-09-24 16:18:04,071 basehttp 5832 4080 "GET /test/game1/ HTTP/1.1" 200 8
+INFO 2023-09-24 16:18:05,176 basehttp 5832 4080 "GET /test/game1/ HTTP/1.1" 200 8
+INFO 2023-09-24 16:18:06,442 basehttp 5832 4080 "GET /test/game1/ HTTP/1.1" 200 8
+INFO 2023-09-24 16:18:12,655 autoreload 5832 5364 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:18:13,182 autoreload 7412 11132 Watching for file changes with StatReloader
+ERROR 2023-09-24 16:18:13,404 log 7412 12956 Internal Server Error: /test/game1/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 24, in eagle_or_tails
+    return HttpResponse(**data)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\http\response.py", line 374, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: HttpResponseBase.__init__() got an unexpected keyword argument 'Îð¸ë'
+ERROR 2023-09-24 16:18:13,407 basehttp 7412 12956 "GET /test/game1/ HTTP/1.1" 500 72539
+INFO 2023-09-24 16:18:17,711 autoreload 7412 11132 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:18:18,129 autoreload 11788 9544 Watching for file changes with StatReloader
+INFO 2023-09-24 16:18:20,057 basehttp 11788 2400 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:18:20,562 basehttp 11788 2400 "GET /test/game1/ HTTP/1.1" 200 18
+INFO 2023-09-24 16:19:08,965 autoreload 11788 9544 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:19:09,414 autoreload 10248 1604 Watching for file changes with StatReloader
+INFO 2023-09-24 16:19:20,041 autoreload 10248 1604 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:19:20,466 autoreload 1896 8064 Watching for file changes with StatReloader
+INFO 2023-09-24 16:19:21,287 basehttp 1896 12400 "GET / HTTP/1.1" 200 22
+WARNING 2023-09-24 16:19:21,625 log 1896 12400 Not Found: /favicon.ico
+WARNING 2023-09-24 16:19:21,630 basehttp 1896 12400 "GET /favicon.ico HTTP/1.1" 404 2483
+INFO 2023-09-24 16:19:29,152 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:32,546 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:33,377 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:33,928 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:34,408 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:34,898 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:35,337 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:35,745 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:36,177 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:36,600 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:37,017 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:37,418 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:37,832 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:38,241 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:38,608 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:38,961 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:39,328 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:39,688 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:19:40,170 basehttp 1896 12400 "GET /test/game1/ HTTP/1.1" 200 32
+INFO 2023-09-24 16:20:07,127 autoreload 1896 8064 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:20:07,598 autoreload 13116 916 Watching for file changes with StatReloader
+INFO 2023-09-24 16:20:12,077 autoreload 13116 916 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:20:12,515 autoreload 11776 1968 Watching for file changes with StatReloader
+INFO 2023-09-24 16:20:15,553 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:17,889 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:18,930 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:19,963 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:20,632 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:21,226 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:21,864 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:24,428 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:25,051 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:20:25,569 basehttp 11776 5520 "GET /test/game1/ HTTP/1.1" 200 82
+INFO 2023-09-24 16:21:40,249 autoreload 11776 1968 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:21:40,672 autoreload 7428 9876 Watching for file changes with StatReloader
+INFO 2023-09-24 16:22:40,214 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:40,823 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:41,313 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:41,745 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:42,183 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:42,504 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:42,874 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:43,240 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:43,521 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:43,903 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:44,240 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:44,585 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:44,896 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,088 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,280 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,468 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,629 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,806 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:45,992 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:46,175 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:46,352 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:46,525 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:46,727 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:46,895 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,079 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,257 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,438 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,618 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,793 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:47,963 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:22:48,120 basehttp 7428 3068 "GET /test/game1/ HTTP/1.1" 200 48
+INFO 2023-09-24 16:23:02,292 autoreload 7428 9876 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
+INFO 2023-09-24 16:23:02,748 autoreload 6604 12316 Watching for file changes with StatReloader
+INFO 2023-09-24 16:23:05,654 basehttp 6604 2052 "GET / HTTP/1.1" 200 22
+WARNING 2023-09-24 16:23:05,993 log 6604 2052 Not Found: /favicon.ico
+WARNING 2023-09-24 16:23:05,994 basehttp 6604 2052 "GET /favicon.ico HTTP/1.1" 404 2483
+INFO 2023-09-24 16:23:12,371 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:15,215 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:15,604 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:15,863 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:16,143 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:16,387 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:16,583 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:16,760 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-09-24 16:23:16,942 basehttp 6604 2052 "GET /test/game1/ HTTP/1.1" 200 94
