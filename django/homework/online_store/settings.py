@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "index_app",
+    "models_app",
 ]
 
 MIDDLEWARE = [
@@ -142,6 +143,11 @@ LOGGING = {
             'level': 'ERROR',
         },
         'index_app': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'models_app': {
             'handlers': ['file'],
             'level': 'INFO',
             'propagate': True,
