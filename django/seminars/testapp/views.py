@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from testapp.models import EagleTails
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO, filename='testapp.log', filemode='a', format='%(levelname)s %(message)s')
+logging.basicConfig(level=logging.INFO, filename='log/testapp.log', filemode='a', format='%(levelname)s %(message)s')
 
 
 def testapp(request):
