@@ -124,3 +124,584 @@ WARNING 2023-09-22 17:22:57,478 log 5700 6272 Not Found: /
 WARNING 2023-09-22 17:22:57,479 basehttp 5700 6272 "GET / HTTP/1.1" 404 2167
 WARNING 2023-09-22 17:22:57,577 log 5700 6272 Not Found: /favicon.ico
 WARNING 2023-09-22 17:22:57,578 basehttp 5700 6272 "GET /favicon.ico HTTP/1.1" 404 2218
+INFO 2023-10-01 13:59:26,176 autoreload 11444 2604 Watching for file changes with StatReloader
+INFO 2023-10-01 13:59:40,292 autoreload 10064 8992 Watching for file changes with StatReloader
+WARNING 2023-10-01 13:59:45,892 log 10064 12336 Not Found: /
+WARNING 2023-10-01 13:59:45,892 basehttp 10064 12336 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 13:59:45,987 log 10064 12336 Not Found: /favicon.ico
+WARNING 2023-10-01 13:59:45,987 basehttp 10064 12336 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 14:00:02,776 views 10064 12336 Index page
+INFO 2023-10-01 14:00:02,777 basehttp 10064 12336 "GET /prefix/ HTTP/1.1" 200 13
+WARNING 2023-10-01 14:00:09,299 log 10064 12324 Not Found: /lection3
+WARNING 2023-10-01 14:00:09,300 basehttp 10064 12324 "GET /lection3 HTTP/1.1" 404 2318
+WARNING 2023-10-01 14:00:16,327 log 10064 12324 Not Found: /lection3/
+WARNING 2023-10-01 14:00:16,328 basehttp 10064 12324 "GET /lection3/ HTTP/1.1" 404 2572
+INFO 2023-10-01 14:00:35,373 basehttp 10064 12324 "GET /lection3/hello HTTP/1.1" 301 0
+INFO 2023-10-01 14:00:35,380 basehttp 10064 12364 "GET /lection3/hello/ HTTP/1.1" 200 19
+INFO 2023-10-01 14:00:44,706 basehttp 10064 12364 "GET /lection3/HelloView HTTP/1.1" 301 0
+INFO 2023-10-01 14:00:44,706 basehttp 10064 8240 "GET /lection3/HelloView/ HTTP/1.1" 200 15
+WARNING 2023-10-01 14:00:49,228 log 10064 8240 Not Found: /lection3/Helloview/
+WARNING 2023-10-01 14:00:49,229 basehttp 10064 8240 "GET /lection3/Helloview/ HTTP/1.1" 404 2602
+INFO 2023-10-01 14:00:55,958 basehttp 10064 8240 "GET /lection3/HelloView/ HTTP/1.1" 200 15
+INFO 2023-10-01 14:14:44,994 autoreload 10064 8992 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:14:45,515 autoreload 13880 13896 Watching for file changes with StatReloader
+INFO 2023-10-01 14:14:47,917 autoreload 13880 13896 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:14:48,408 autoreload 268 10012 Watching for file changes with StatReloader
+INFO 2023-10-01 14:14:53,703 autoreload 268 10012 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:14:54,234 autoreload 4252 2136 Watching for file changes with StatReloader
+INFO 2023-10-01 14:15:01,799 autoreload 4252 2136 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:15:02,263 autoreload 12496 13796 Watching for file changes with StatReloader
+INFO 2023-10-01 14:15:18,878 autoreload 12496 13796 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:15:19,334 autoreload 7316 14144 Watching for file changes with StatReloader
+INFO 2023-10-01 14:15:25,821 autoreload 7316 14144 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:15:26,335 autoreload 4540 6848 Watching for file changes with StatReloader
+INFO 2023-10-01 14:15:40,022 autoreload 4540 6848 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:15:40,481 autoreload 13756 12396 Watching for file changes with StatReloader
+INFO 2023-10-01 14:15:55,052 autoreload 13756 12396 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:15:55,502 autoreload 2808 13036 Watching for file changes with StatReloader
+INFO 2023-10-01 14:16:04,941 autoreload 2808 13036 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:16:05,398 autoreload 2368 14024 Watching for file changes with StatReloader
+INFO 2023-10-01 14:16:14,978 autoreload 2368 14024 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:16:15,432 autoreload 13920 14240 Watching for file changes with StatReloader
+INFO 2023-10-01 14:16:33,109 autoreload 13920 14240 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:16:33,557 autoreload 7744 12600 Watching for file changes with StatReloader
+INFO 2023-10-01 14:16:48,266 autoreload 7744 12600 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:16:48,725 autoreload 12188 13872 Watching for file changes with StatReloader
+INFO 2023-10-01 14:16:54,205 autoreload 12188 13872 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:16:54,703 autoreload 12980 10716 Watching for file changes with StatReloader
+INFO 2023-10-01 14:17:10,468 autoreload 12980 10716 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:17:10,941 autoreload 2808 12352 Watching for file changes with StatReloader
+INFO 2023-10-01 14:17:14,335 autoreload 2808 12352 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:17:14,928 autoreload 10272 4540 Watching for file changes with StatReloader
+INFO 2023-10-01 14:21:40,697 autoreload 10272 4540 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:21:41,233 autoreload 7744 1316 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:00,051 autoreload 7744 1316 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:00,517 autoreload 13632 13704 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:07,905 autoreload 13632 13704 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:08,386 autoreload 5876 4372 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:10,622 autoreload 5876 4372 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:11,235 autoreload 14156 13060 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:26,973 autoreload 14156 13060 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:27,500 autoreload 12436 8048 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:30,940 autoreload 12436 8048 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:31,425 autoreload 14244 13584 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:36,774 autoreload 14244 13584 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:37,227 autoreload 7204 13192 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:42,713 autoreload 7204 13192 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:43,201 autoreload 14328 14012 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:48,678 autoreload 14328 14012 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:49,130 autoreload 12292 14176 Watching for file changes with StatReloader
+INFO 2023-10-01 14:22:54,625 autoreload 12292 14176 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:22:55,124 autoreload 12348 13428 Watching for file changes with StatReloader
+INFO 2023-10-01 14:23:07,809 autoreload 12348 13428 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:23:08,347 autoreload 4252 12372 Watching for file changes with StatReloader
+INFO 2023-10-01 14:23:46,582 autoreload 4252 12372 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:23:47,016 autoreload 2124 14260 Watching for file changes with StatReloader
+INFO 2023-10-01 14:24:07,148 autoreload 10840 11396 Watching for file changes with StatReloader
+INFO 2023-10-01 14:24:36,241 autoreload 10840 11396 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 14:24:36,696 autoreload 7532 13032 Watching for file changes with StatReloader
+ERROR 2023-10-01 14:24:39,031 log 7532 8644 Internal Server Error: /lection3/posts/2005
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 18, in year_post
+    return HttpResponse(f"Posts from {year}<br> {res: for res in range(10)}")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid format specifier ' for res in range(10)' for object of type 'str'
+ERROR 2023-10-01 14:24:39,031 basehttp 7532 8644 "GET /lection3/posts/2005 HTTP/1.1" 500 67494
+INFO 2023-10-01 14:26:06,855 autoreload 7532 13032 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:26:07,405 autoreload 10840 12720 Watching for file changes with StatReloader
+INFO 2023-10-01 14:28:14,814 autoreload 10840 12720 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:28:15,397 autoreload 3836 1516 Watching for file changes with StatReloader
+INFO 2023-10-01 14:29:02,178 autoreload 3836 1516 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 14:29:02,655 autoreload 12852 14244 Watching for file changes with StatReloader
+INFO 2023-10-01 14:29:07,869 basehttp 12852 13416 "GET /lection3/posts/2005 HTTP/1.1" 200 36
+INFO 2023-10-01 14:29:16,995 basehttp 12852 13416 "GET /lection3/posts/20055 HTTP/1.1" 200 37
+INFO 2023-10-01 14:29:20,185 basehttp 12852 13416 "GET /lection3/posts/2023 HTTP/1.1" 200 36
+INFO 2023-10-01 22:13:24,878 autoreload 9784 14052 Watching for file changes with StatReloader
+INFO 2023-10-01 22:13:38,598 autoreload 9784 14052 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 22:13:39,162 autoreload 12116 8556 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:13:41,468 log 12116 10676 Not Found: /
+WARNING 2023-10-01 22:13:41,468 basehttp 12116 10676 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:13:41,602 log 12116 10676 Not Found: /favicon.ico
+WARNING 2023-10-01 22:13:41,602 basehttp 12116 10676 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-01 22:13:48,743 log 12116 10676 Not Found: /lection3/
+WARNING 2023-10-01 22:13:48,743 basehttp 12116 10676 "GET /lection3/ HTTP/1.1" 404 2984
+INFO 2023-10-01 22:14:00,475 basehttp 12116 10676 "GET /lection3/posts/2005/12 HTTP/1.1" 200 39
+INFO 2023-10-01 22:14:27,300 autoreload 12116 8556 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:14:27,954 autoreload 8832 7068 Watching for file changes with StatReloader
+INFO 2023-10-01 22:15:47,510 autoreload 8832 7068 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:15:48,065 autoreload 8940 3184 Watching for file changes with StatReloader
+INFO 2023-10-01 22:15:52,377 autoreload 8940 3184 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:15:52,963 autoreload 13668 7604 Watching for file changes with StatReloader
+INFO 2023-10-01 22:16:08,940 autoreload 13668 7604 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:16:09,572 autoreload 4680 13632 Watching for file changes with StatReloader
+INFO 2023-10-01 22:16:24,138 autoreload 4680 13632 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:16:24,691 autoreload 14252 8208 Watching for file changes with StatReloader
+INFO 2023-10-01 22:16:44,365 autoreload 14252 8208 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:16:45,007 autoreload 8504 2468 Watching for file changes with StatReloader
+INFO 2023-10-01 22:17:13,228 autoreload 8504 2468 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:17:13,923 autoreload 12436 9028 Watching for file changes with StatReloader
+INFO 2023-10-01 22:17:42,100 autoreload 12436 9028 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:17:42,743 autoreload 10920 5548 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:00,625 autoreload 10920 5548 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:01,257 autoreload 4252 5600 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:06,775 autoreload 4252 5600 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:07,371 autoreload 2420 13408 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:17,079 autoreload 2420 13408 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:17,772 autoreload 5616 5468 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:41,814 autoreload 5616 5468 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:42,475 autoreload 12772 8768 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:45,992 autoreload 12772 8768 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:46,622 autoreload 1084 8052 Watching for file changes with StatReloader
+INFO 2023-10-01 22:18:56,083 autoreload 1084 8052 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:18:56,706 autoreload 5172 6084 Watching for file changes with StatReloader
+INFO 2023-10-01 22:19:00,211 autoreload 5172 6084 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:19:00,896 autoreload 12292 5372 Watching for file changes with StatReloader
+INFO 2023-10-01 22:19:02,336 autoreload 12292 5372 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:19:03,023 autoreload 10076 11568 Watching for file changes with StatReloader
+INFO 2023-10-01 22:19:10,632 autoreload 10076 11568 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:19:11,315 autoreload 10676 7068 Watching for file changes with StatReloader
+INFO 2023-10-01 22:19:26,906 autoreload 10676 7068 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:19:27,495 autoreload 4244 13300 Watching for file changes with StatReloader
+INFO 2023-10-01 22:19:36,919 autoreload 4244 13300 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 22:19:37,480 autoreload 5468 12764 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:19:38,671 log 5468 10356 Not Found: /
+WARNING 2023-10-01 22:19:38,671 basehttp 5468 10356 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:19:39,073 log 5468 10356 Not Found: /favicon.ico
+WARNING 2023-10-01 22:19:39,074 basehttp 5468 10356 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-01 22:19:53,595 log 5468 10356 Not Found: /posts/2023/07/kkkkd__4442
+WARNING 2023-10-01 22:19:53,596 basehttp 5468 10356 "GET /posts/2023/07/kkkkd__4442 HTTP/1.1" 404 2369
+INFO 2023-10-01 22:20:04,416 basehttp 5468 10356 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:20:23,442 autoreload 5468 12764 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:20:24,080 autoreload 3408 9920 Watching for file changes with StatReloader
+INFO 2023-10-01 22:20:25,288 basehttp 3408 11600 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:20:26,487 basehttp 3408 11600 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:20:26,767 basehttp 3408 11600 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:20:26,963 basehttp 3408 11600 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:20:27,145 basehttp 3408 11600 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 139
+INFO 2023-10-01 22:21:59,082 autoreload 3408 9920 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 22:21:59,619 autoreload 2868 11208 Watching for file changes with StatReloader
+INFO 2023-10-01 22:22:02,051 basehttp 2868 2420 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 164
+INFO 2023-10-01 22:22:07,211 basehttp 2868 7244 "GET /lection3/posts/2023/07/kkkkd__4442 HTTP/1.1" 200 164
+WARNING 2023-10-01 22:22:07,419 log 2868 7244 Not Found: /favicon.ico
+WARNING 2023-10-01 22:22:07,419 basehttp 2868 7244 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:30:02,833 autoreload 2868 3724 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:30:06,254 log 2868 12508 Not Found: /
+WARNING 2023-10-01 22:30:06,254 basehttp 2868 12508 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:30:06,587 log 2868 12508 Not Found: /favicon.ico
+WARNING 2023-10-01 22:30:06,589 basehttp 2868 12508 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-01 22:30:12,547 log 2868 12508 Not Found: /index
+WARNING 2023-10-01 22:30:12,548 basehttp 2868 12508 "GET /index HTTP/1.1" 404 2309
+WARNING 2023-10-01 22:30:17,767 log 2868 12508 Not Found: /index.html
+WARNING 2023-10-01 22:30:17,768 basehttp 2868 12508 "GET /index.html HTTP/1.1" 404 2324
+INFO 2023-10-01 22:31:49,604 autoreload 2868 3724 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 22:31:50,192 autoreload 1864 13904 Watching for file changes with StatReloader
+INFO 2023-10-01 22:32:11,058 autoreload 1864 13904 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 22:32:11,604 autoreload 9108 8040 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:32:13,417 log 9108 10424 Not Found: /
+WARNING 2023-10-01 22:32:13,417 basehttp 9108 10424 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:32:19,931 log 9108 10424 Not Found: /
+WARNING 2023-10-01 22:32:19,932 basehttp 9108 10424 "GET / HTTP/1.1" 404 2276
+INFO 2023-10-01 22:32:30,067 basehttp 9108 10424 "GET /lection3 HTTP/1.1" 301 0
+INFO 2023-10-01 22:32:30,073 basehttp 9108 3544 "GET /lection3/ HTTP/1.1" 200 387
+INFO 2023-10-01 22:34:19,654 autoreload 11584 4244 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:34:21,868 log 11584 13420 Not Found: /
+WARNING 2023-10-01 22:34:21,868 basehttp 11584 13420 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:34:22,199 log 11584 13420 Not Found: /favicon.ico
+WARNING 2023-10-01 22:34:22,201 basehttp 11584 13420 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:34:29,561 basehttp 11584 13420 "GET /lection3/ HTTP/1.1" 200 425
+INFO 2023-10-01 22:34:52,846 autoreload 14324 9416 Watching for file changes with StatReloader
+INFO 2023-10-01 22:34:54,819 basehttp 14324 7468 "GET /lection3/ HTTP/1.1" 200 416
+INFO 2023-10-01 22:39:05,653 autoreload 13552 12388 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:39:08,826 log 13552 9032 Not Found: /
+WARNING 2023-10-01 22:39:08,826 basehttp 13552 9032 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:39:09,144 log 13552 9032 Not Found: /favicon.ico
+WARNING 2023-10-01 22:39:09,144 basehttp 13552 9032 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:39:14,804 basehttp 13552 9032 "GET /lection3/ HTTP/1.1" 200 435
+INFO 2023-10-01 22:40:57,161 autoreload 14128 2340 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:40:58,899 log 14128 5636 Not Found: /
+WARNING 2023-10-01 22:40:58,899 basehttp 14128 5636 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:40:59,214 log 14128 5636 Not Found: /favicon.ico
+WARNING 2023-10-01 22:40:59,214 basehttp 14128 5636 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:41:03,060 basehttp 14128 5636 "GET /lection3/ HTTP/1.1" 200 592
+INFO 2023-10-01 22:41:25,258 autoreload 9488 2836 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:41:26,655 log 9488 2884 Not Found: /
+WARNING 2023-10-01 22:41:26,655 basehttp 9488 2884 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:41:26,922 log 9488 2884 Not Found: /favicon.ico
+WARNING 2023-10-01 22:41:26,932 basehttp 9488 2884 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:41:30,117 basehttp 9488 2884 "GET /lection3/ HTTP/1.1" 200 594
+INFO 2023-10-01 22:41:47,632 autoreload 12588 13648 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:41:48,808 log 12588 6672 Not Found: /
+WARNING 2023-10-01 22:41:48,808 basehttp 12588 6672 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:41:49,067 log 12588 6672 Not Found: /favicon.ico
+WARNING 2023-10-01 22:41:49,067 basehttp 12588 6672 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:41:51,954 basehttp 12588 6672 "GET /lection3/ HTTP/1.1" 200 548
+INFO 2023-10-01 22:42:16,490 autoreload 12528 13248 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:42:17,405 log 12528 11856 Not Found: /
+WARNING 2023-10-01 22:42:17,405 basehttp 12528 11856 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:42:17,672 log 12528 11856 Not Found: /favicon.ico
+WARNING 2023-10-01 22:42:17,674 basehttp 12528 11856 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:42:20,485 basehttp 12528 11856 "GET /lection3/ HTTP/1.1" 200 539
+INFO 2023-10-01 22:48:12,440 autoreload 2120 788 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:48:13,511 log 2120 1272 Not Found: /
+WARNING 2023-10-01 22:48:13,511 basehttp 2120 1272 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:48:13,806 log 2120 1272 Not Found: /favicon.ico
+WARNING 2023-10-01 22:48:13,806 basehttp 2120 1272 "GET /favicon.ico HTTP/1.1" 404 2327
+ERROR 2023-10-01 22:48:17,809 log 2120 1272 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 44, in index
+    return render(request, "myapp3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' item in content' from 'for item in content'
+ERROR 2023-10-01 22:48:17,825 basehttp 2120 1272 "GET /lection3/ HTTP/1.1" 500 141936
+INFO 2023-10-01 22:49:54,932 autoreload 13660 5276 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:49:55,796 log 13660 1084 Not Found: /
+WARNING 2023-10-01 22:49:55,796 basehttp 13660 1084 "GET / HTTP/1.1" 404 2276
+ERROR 2023-10-01 22:49:58,220 log 13660 1084 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 44, in index
+    return render(request, "myapp3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for item in content %' from '% for item in content %'
+ERROR 2023-10-01 22:49:58,225 basehttp 13660 1084 "GET /lection3/ HTTP/1.1" 500 141572
+INFO 2023-10-01 22:50:29,904 autoreload 9416 13172 Watching for file changes with StatReloader
+ERROR 2023-10-01 22:50:31,091 log 9416 1868 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 44, in index
+    return render(request, "myapp3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for item in content %' from '% for item in content %'
+ERROR 2023-10-01 22:50:31,107 basehttp 9416 1868 "GET /lection3/ HTTP/1.1" 500 141562
+ERROR 2023-10-01 22:50:33,596 log 9416 1868 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 44, in index
+    return render(request, "myapp3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for item in content %' from '% for item in content %'
+ERROR 2023-10-01 22:50:33,596 basehttp 9416 1868 "GET /lection3/ HTTP/1.1" 500 141562
+ERROR 2023-10-01 22:50:34,028 log 9416 1868 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py", line 44, in index
+    return render(request, "myapp3/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for item in content %' from '% for item in content %'
+ERROR 2023-10-01 22:50:34,044 basehttp 9416 1868 "GET /lection3/ HTTP/1.1" 500 141562
+INFO 2023-10-01 22:51:23,865 autoreload 3456 11868 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:51:25,139 log 3456 10984 Not Found: /
+WARNING 2023-10-01 22:51:25,139 basehttp 3456 10984 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:51:25,493 log 3456 10984 Not Found: /favicon.ico
+WARNING 2023-10-01 22:51:25,495 basehttp 3456 10984 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:51:28,231 basehttp 3456 10984 "GET /lection3/ HTTP/1.1" 200 667
+INFO 2023-10-01 22:53:06,736 autoreload 3456 11868 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-01 22:58:46,363 autoreload 260 8168 Watching for file changes with StatReloader
+WARNING 2023-10-01 22:58:47,234 log 260 13404 Not Found: /
+WARNING 2023-10-01 22:58:47,234 basehttp 260 13404 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 22:58:47,535 log 260 13404 Not Found: /favicon.ico
+WARNING 2023-10-01 22:58:47,535 basehttp 260 13404 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 22:58:51,488 basehttp 260 13404 "GET /lection3/ HTTP/1.1" 200 678
+INFO 2023-10-01 22:59:48,927 autoreload 260 8168 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\urls.py changed, reloading.
+INFO 2023-10-01 22:59:49,504 autoreload 12772 13904 Watching for file changes with StatReloader
+INFO 2023-10-01 22:59:50,439 basehttp 12772 11568 "GET / HTTP/1.1" 200 678
+INFO 2023-10-01 22:59:58,182 autoreload 12772 13904 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\urls.py changed, reloading.
+INFO 2023-10-01 22:59:58,741 autoreload 3964 1116 Watching for file changes with StatReloader
+INFO 2023-10-01 23:00:24,483 autoreload 11540 6872 Watching for file changes with StatReloader
+WARNING 2023-10-01 23:00:25,601 log 11540 2704 Not Found: /
+WARNING 2023-10-01 23:00:25,601 basehttp 11540 2704 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 23:00:25,974 log 11540 2704 Not Found: /favicon.ico
+WARNING 2023-10-01 23:00:25,975 basehttp 11540 2704 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-01 23:00:33,581 basehttp 11540 2704 "GET /lection3/ HTTP/1.1" 200 717
+INFO 2023-10-01 23:03:01,975 autoreload 11540 6872 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 23:03:02,542 autoreload 12240 4548 Watching for file changes with StatReloader
+INFO 2023-10-01 23:03:30,356 autoreload 9740 12740 Watching for file changes with StatReloader
+INFO 2023-10-01 23:05:03,289 autoreload 9740 12740 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-01 23:05:03,867 autoreload 12764 11460 Watching for file changes with StatReloader
+INFO 2023-10-01 23:05:48,568 autoreload 12764 11460 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 23:05:49,122 autoreload 13828 4544 Watching for file changes with StatReloader
+INFO 2023-10-01 23:06:02,934 autoreload 13828 4544 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-01 23:06:03,488 autoreload 1648 13048 Watching for file changes with StatReloader
+WARNING 2023-10-01 23:06:08,132 log 1648 12436 Not Found: /
+WARNING 2023-10-01 23:06:08,132 basehttp 1648 12436 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-01 23:06:08,429 log 1648 12436 Not Found: /favicon.ico
+WARNING 2023-10-01 23:06:08,430 basehttp 1648 12436 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-01 23:06:13,244 log 1648 12436 Not Found: /2
+WARNING 2023-10-01 23:06:13,245 basehttp 1648 12436 "GET /2 HTTP/1.1" 404 2297
+ERROR 2023-10-01 23:06:18,794 log 1648 12436 Internal Server Error: /lection3/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp2\views.py", line 6, in index
+    return render(request, "myapp2/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp2/index.html
+ERROR 2023-10-01 23:06:18,794 basehttp 1648 12436 "GET /lection3/ HTTP/1.1" 500 82040
+ERROR 2023-10-01 23:06:27,633 log 1648 12436 Internal Server Error: /lection3/2
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp2\views.py", line 6, in index
+    return render(request, "myapp2/index.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp2/index.html
+ERROR 2023-10-01 23:06:27,635 basehttp 1648 12436 "GET /lection3/2 HTTP/1.1" 500 82052
+WARNING 2023-10-01 23:06:36,209 log 1648 12436 Not Found: /2/lection3
+WARNING 2023-10-01 23:06:36,209 basehttp 1648 12436 "GET /2/lection3 HTTP/1.1" 404 2324
+INFO 2023-10-01 23:07:19,525 autoreload 1648 13048 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
