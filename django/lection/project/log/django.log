@@ -705,3 +705,71 @@ ERROR 2023-10-01 23:06:27,635 basehttp 1648 12436 "GET /lection3/2 HTTP/1.1" 500
 WARNING 2023-10-01 23:06:36,209 log 1648 12436 Not Found: /2/lection3
 WARNING 2023-10-01 23:06:36,209 basehttp 1648 12436 "GET /2/lection3 HTTP/1.1" 404 2324
 INFO 2023-10-01 23:07:19,525 autoreload 1648 13048 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-02 15:06:38,528 autoreload 9568 12056 Watching for file changes with StatReloader
+WARNING 2023-10-02 15:06:39,941 log 9568 7456 Not Found: /
+WARNING 2023-10-02 15:06:39,942 basehttp 9568 7456 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-02 15:06:40,240 log 9568 7456 Not Found: /favicon.ico
+WARNING 2023-10-02 15:06:40,241 basehttp 9568 7456 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-02 15:06:44,534 log 9568 7456 Not Found: /lection3/
+WARNING 2023-10-02 15:06:44,535 basehttp 9568 7456 "GET /lection3/ HTTP/1.1" 404 3395
+INFO 2023-10-02 15:06:57,150 basehttp 9568 7456 "GET /lection3/for HTTP/1.1" 301 0
+INFO 2023-10-02 15:06:57,159 basehttp 9568 7176 "GET /lection3/for/ HTTP/1.1" 200 1240
+INFO 2023-10-02 15:09:04,604 autoreload 9568 12056 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\views.py changed, reloading.
+INFO 2023-10-02 15:09:05,077 autoreload 2732 4016 Watching for file changes with StatReloader
+INFO 2023-10-02 15:10:17,455 autoreload 2732 4016 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp3\urls.py changed, reloading.
+INFO 2023-10-02 15:10:17,879 autoreload 5912 7472 Watching for file changes with StatReloader
+INFO 2023-10-02 15:10:23,947 autoreload 7124 3776 Watching for file changes with StatReloader
+WARNING 2023-10-02 15:10:24,926 log 7124 11628 Not Found: /
+WARNING 2023-10-02 15:10:24,927 basehttp 7124 11628 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-02 15:10:25,245 log 7124 11628 Not Found: /favicon.ico
+WARNING 2023-10-02 15:10:25,246 basehttp 7124 11628 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-02 15:10:29,590 log 7124 11628 Not Found: /lection3/
+WARNING 2023-10-02 15:10:29,591 basehttp 7124 11628 "GET /lection3/ HTTP/1.1" 404 3575
+INFO 2023-10-02 15:10:37,542 basehttp 7124 11628 "GET /lection3/my_temp HTTP/1.1" 301 0
+INFO 2023-10-02 15:10:37,557 basehttp 7124 3268 "GET /lection3/my_temp/ HTTP/1.1" 200 717
+INFO 2023-10-02 15:22:13,912 autoreload 5048 8080 Watching for file changes with StatReloader
+WARNING 2023-10-02 15:22:14,850 log 5048 13584 Not Found: /
+WARNING 2023-10-02 15:22:14,850 basehttp 5048 13584 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-02 15:22:15,153 log 5048 13584 Not Found: /favicon.ico
+WARNING 2023-10-02 15:22:15,154 basehttp 5048 13584 "GET /favicon.ico HTTP/1.1" 404 2327
+WARNING 2023-10-02 15:22:19,792 log 5048 13584 Not Found: /lection3/
+WARNING 2023-10-02 15:22:19,793 basehttp 5048 13584 "GET /lection3/ HTTP/1.1" 404 3927
+INFO 2023-10-02 15:22:23,309 basehttp 5048 13584 "GET /lection3/index HTTP/1.1" 301 0
+INFO 2023-10-02 15:22:23,319 basehttp 5048 8476 "GET /lection3/index/ HTTP/1.1" 200 316
+INFO 2023-10-02 15:22:44,923 autoreload 14272 14308 Watching for file changes with StatReloader
+INFO 2023-10-02 15:22:46,574 basehttp 14272 13360 "GET /lection3/index/ HTTP/1.1" 200 281
+INFO 2023-10-02 15:22:57,771 basehttp 14272 13360 "GET /lection3/about HTTP/1.1" 301 0
+INFO 2023-10-02 15:22:57,776 basehttp 14272 10492 "GET /lection3/about/ HTTP/1.1" 200 239
+INFO 2023-10-02 15:26:48,170 autoreload 7912 14040 Watching for file changes with StatReloader
+WARNING 2023-10-02 15:26:49,570 log 7912 8592 Not Found: /
+WARNING 2023-10-02 15:26:49,571 basehttp 7912 8592 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-02 15:26:49,873 log 7912 8592 Not Found: /favicon.ico
+WARNING 2023-10-02 15:26:49,875 basehttp 7912 8592 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-02 15:27:02,959 basehttp 7912 8592 "GET /lection3/index/ HTTP/1.1" 200 402
+INFO 2023-10-02 15:27:10,787 basehttp 7912 8592 "GET /lection3/about/ HTTP/1.1" 200 360
+INFO 2023-10-02 15:27:41,606 autoreload 13764 13068 Watching for file changes with StatReloader
+WARNING 2023-10-02 15:27:44,741 log 13764 8072 Not Found: /
+WARNING 2023-10-02 15:27:44,742 basehttp 13764 8072 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-02 15:27:45,016 log 13764 8072 Not Found: /favicon.ico
+WARNING 2023-10-02 15:27:45,016 basehttp 13764 8072 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-02 15:27:50,539 basehttp 13764 8072 "GET /lection3/index/ HTTP/1.1" 200 402
+INFO 2023-10-02 15:27:54,245 basehttp 13764 8072 "GET /lection3/about/ HTTP/1.1" 200 360
+INFO 2023-10-02 15:30:06,421 autoreload 8148 13888 Watching for file changes with StatReloader
+INFO 2023-10-02 15:30:07,356 basehttp 8148 2288 "GET / HTTP/1.1" 200 402
+WARNING 2023-10-02 15:30:07,657 log 8148 2288 Not Found: /favicon.ico
+WARNING 2023-10-02 15:30:07,659 basehttp 8148 2288 "GET /favicon.ico HTTP/1.1" 404 2427
+INFO 2023-10-02 16:04:01,635 autoreload 10408 11096 Watching for file changes with StatReloader
+INFO 2023-10-02 16:04:08,852 basehttp 10408 14028 "GET / HTTP/1.1" 200 402
+WARNING 2023-10-02 16:04:09,160 log 10408 14028 Not Found: /favicon.ico
+WARNING 2023-10-02 16:04:09,160 basehttp 10408 14028 "GET /favicon.ico HTTP/1.1" 404 2427
+WARNING 2023-10-02 16:04:25,604 log 10408 14028 Not Found: /lection3/author_posts
+WARNING 2023-10-02 16:04:25,605 basehttp 10408 14028 "GET /lection3/author_posts HTTP/1.1" 404 4466
+INFO 2023-10-02 16:04:33,483 basehttp 10408 14028 "GET /lection3/author/5 HTTP/1.1" 200 574
+INFO 2023-10-02 16:04:38,848 basehttp 10408 14028 "GET /lection3/post/1 HTTP/1.1" 200 562
+INFO 2023-10-02 16:04:44,158 basehttp 10408 14028 "GET /lection3/author/6 HTTP/1.1" 200 1309
+INFO 2023-10-02 16:04:47,461 basehttp 10408 14028 "GET /lection3/post/3 HTTP/1.1" 200 589
+INFO 2023-10-02 16:04:50,607 basehttp 10408 14028 "GET /lection3/post/2 HTTP/1.1" 200 536
+INFO 2023-10-02 16:04:56,845 basehttp 10408 14028 "GET /lection3/post/4 HTTP/1.1" 200 531
+INFO 2023-10-02 16:05:18,217 autoreload 1472 2800 Watching for file changes with StatReloader
+INFO 2023-10-02 16:05:19,822 basehttp 1472 4372 "GET /lection3/author/6 HTTP/1.1" 200 1313
+INFO 2023-10-02 16:05:22,013 basehttp 1472 4372 "GET /lection3/post/5 HTTP/1.1" 200 560
