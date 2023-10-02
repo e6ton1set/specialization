@@ -1,5 +1,5 @@
 """
-URL configuration for online_store project.
+URL configuration for online_store project2.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
