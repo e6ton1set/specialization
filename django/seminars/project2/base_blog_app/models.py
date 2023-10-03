@@ -1,5 +1,6 @@
 import datetime as dt
 from django.db import models
+from django.utils.timezone import now
 
 
 class Author(models.Model):
@@ -28,3 +29,14 @@ class Article(models.Model):
 
     def __str__(self):
         return f"{self.title}"
+
+
+class Comment(models.Model):
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, default=4)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, default=4)
+    comment = models.TextField()
+    is_published = models.DateTimeField(default=now)
+    updated = models.DateTimeField(default=now)
+
+    def __str__(self):
+        return f"Title is {self.comment}"

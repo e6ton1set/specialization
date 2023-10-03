@@ -1,0 +1,21 @@
+{% extends "base_blog_app/base.html" %}
+{% block title %}{{ article.title }} {% endblock %}
+
+{% block content %}
+    <h1>Статья</h1>
+        <h3>{{ article.title }}</h3>
+        <h3>{{ article.content }}</h3>
+    <h2>Комментарии</h2>
+    {% for comment in comments %}
+        <p>{{ comment.author }}</p>
+        <p>{{ comment.comment }}</p>
+        {% if comment.updated != comment.is_published %}
+            <p>Изменено: {{ comment.updated }}</p>
+        {% else %}
+            <p>Создано: {{ comment.is_published }}</p>
+        {% endif %}
+        {% empty %}
+            <p>Ничего не найдено.</p>
+    {% endfor %}
+    <p>{{ show_count }}</p>
+{% endblock %}

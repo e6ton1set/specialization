@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 import logging
-from django.shortcuts import render
-from base_blog_app.models import Author, Article
+from django.shortcuts import render, get_object_or_404
+
+from base_blog_app.models import Author, Article, Comment
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +35,7 @@ def view_all_articles(request):
     articles = Article.objects.all()
     context = {"title": "Список статей", "articles": articles}
 
-    return render(request, "base_blog_app/templates_articles.html", context)
+    return render(request, "base_blog_app/template_articles.html", context)
 
 
 def view_article(request, article_id):
@@ -45,3 +46,16 @@ def view_article(request, article_id):
     article.save()
 
     return render(request, "base_blog_app/template_article.html", context)
+
+
+def view_comment_article(request, post_id):
+    article = get_object_or_404(Article, pk=post_id)
+    comments = Comment.objects.filter(article=article).all()
+    article.show_count += 1
+    article.save()
+
+    return render(request, "base_blog_app/template_comment.html", {"article": article,
+                                                                   "comments": comments,
+                                                                   "show_count": article.show_count
+                                                                   }
+                  )

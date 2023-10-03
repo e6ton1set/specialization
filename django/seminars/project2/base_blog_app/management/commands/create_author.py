@@ -1,7 +1,6 @@
 from abc import ABC
-
 from django.core.management import BaseCommand
-from base_blog_app.models import Author, Article
+from base_blog_app.models import Author, Article, Comment
 
 
 class Command(BaseCommand, ABC):
@@ -23,3 +22,10 @@ class Command(BaseCommand, ABC):
                     is_published=True,
                 )
                 article.save()
+                for k in range(1, count + 1):
+                    comment = Comment(
+                        comment=f"Text from # bla-bla-bla",
+                        author=author,
+                        article=article,
+                    )
+                    comment.save()
