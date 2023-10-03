@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} Главная {% endblock %}
+
+{% block content %}
+    <h1 style="text-align:center">{{ index2 }}</h1>
+    <div class="container" style="text-align:center">
+        <button>
+            <a href="http://127.0.0.1:8000/games/game1/1">Орёл или решка</a>
+        </button>
+        <button>
+            <a href="http://127.0.0.1:8000/games/game2/1">Подбросить кубик</a>
+        </button>
+        <button>
+            <a href="http://127.0.0.1:8000/games/game3/1">Случайное число до 100</a>
+        </button>
+        <br>
+        <br>
+        <button>
+            <a href="http://127.0.0.1:8000/" style="color: darkred">На главную</a>
+        </button>
+                <button>
+            <a href="http://127.0.0.1:8000/games/statistic/" style="color: darkred">Статистика игр</a>
+        </button>
+    </div>
+{% endblock %}
