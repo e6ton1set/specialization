@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>{% block title %}Интернет-магазин{% endblock %}</title>
+</head>
+<body>
+    <h1 class="text-center">Шапка базового шаблона</h1>
+    {% block content %}
+    <p class="text-center">Текст базового шаблона</p>
+    {% endblock %}
+</body>
+    <footer class="text-center footer">
+        <h3>Подвал базового шаблона</h3>
+    </footer>
+</html>
