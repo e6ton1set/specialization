@@ -1,6 +1,6 @@
 from abc import ABC
 from django.core.management import BaseCommand
-from base_blog_app.models import Author, Article, Comment
+from base_blog_app.models import Author, Article
 
 
 class Command(BaseCommand, ABC):
