@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 import logging
+from django.shortcuts import render
 from base_blog_app.models import Author, Article
 
 logger = logging.getLogger(__name__)
@@ -27,3 +28,10 @@ def articles_by_author(request):
     author_id = Author.objects.filter(first_name=name).first()
     articles_author = Article.objects.filter(author_id=author_id).all()
     return HttpResponse(articles_author)
+
+
+def view_all_articles(request):
+    articles = Article.objects.all()
+    context = {"title": "Список статей", "articles": articles}
+
+    return render(request, "base_blog_app/templates_articles.html", context)

@@ -19,6 +19,7 @@ class Command(BaseCommand, ABC):
                 article = Article(
                     title=f"Title{j}",
                     content=f"Text from {author.first_name} #_{j} bla-bla-bla",
-                    author=author
+                    author=author,
+                    is_published=True,
                 )
                 article.save()
