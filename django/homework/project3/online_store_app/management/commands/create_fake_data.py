@@ -1,9 +1,6 @@
 from django.core.management import BaseCommand
-import logging
-from models_app.models import Client, Product, Order
+from online_store_app.models import Client, Product, Order
 import random
-
-logger = logging.getLogger(__name__)
 
 
 class Command(BaseCommand):
@@ -27,7 +24,7 @@ class Command(BaseCommand):
             client.save()
             clientele_list.append(client)
 
-            for j in range(1, count+1):
+            for j in range(1, count + 1):
                 product = Product(
                     name=f"Product_{j}",
                     amount=f"{j * random.randint(1, 32)}",
@@ -36,17 +33,14 @@ class Command(BaseCommand):
                 product.save()
                 products_list.append(product)
 
-        for k in range(1, count+1):
-            user_rnd = random.randint(1, count-1)
-            order = Order(customer=clientele_list[user_rnd])
+        for k in range(1, count + 1):
+            client_rnd = random.randint(1, count - 1)
+            order = Order(customer=clientele_list[client_rnd])
             total_price = 0
-            for l in range(0, count-1):
-                if random.randint(0, 1) == 1:
-                    total_price += float(products_list[l].price)
-                    order.total_price = total_price
-                    order.save()
-                    order.products.add(products_list[l])
+            for l in range(0, count - 1):
+                total_price += float(products_list[l].price)
+                order.total_price = total_price
+                order.save()
+                order.products.add(products_list[l])
 
         self.stdout.write(f"Created: {count} fake clients.")
-        logger.info(f"Created: {count} fake clients.")
-
