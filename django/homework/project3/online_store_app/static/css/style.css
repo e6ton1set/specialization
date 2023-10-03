@@ -1,7 +1,14 @@
-.text-center {
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align:center;
 }
 
 .footer {
     margin-top: 500px;
+}
+
+.client {
+    color: darkblue;
+    font-weight: bold;
 }
