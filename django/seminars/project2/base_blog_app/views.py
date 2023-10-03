@@ -35,3 +35,13 @@ def view_all_articles(request):
     context = {"title": "Список статей", "articles": articles}
 
     return render(request, "base_blog_app/templates_articles.html", context)
+
+
+def view_article(request, article_id):
+    article = Article.objects.get(id=article_id)
+    context = {"title": article.title, "text": article.content}
+
+    article.show_count += 1
+    article.save()
+
+    return render(request, "base_blog_app/template_article.html", context)
