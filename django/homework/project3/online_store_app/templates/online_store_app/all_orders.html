@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} {% endblock %}
+
+{% block content %}
+        <p>Имя покупателя: {{ client.name }} </p>
+        <p>Дата заказа: {{ order.date_ordered }} </p>
+      {% for key, value in all_orders.items %}
+          {{ key }}
+          {{ value }}
+            <br>
+            <br>
+      {% endfor %}
+        <button type="button" class="btn-light"><a href="{% url 'index' %} " class="client">Вернуться</a></button>
+{% endblock %}

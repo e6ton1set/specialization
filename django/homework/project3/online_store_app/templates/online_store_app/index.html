@@ -3,8 +3,9 @@
 
 {% block content %}
     <h3>Все клиенты</h3>
+    <br>
     {% for client in clients %}
-        <button type="button" class="btn-light"><a href="#" class="client">{{ client.name }}</a></button>
+        <button type="button" class="btn-light"><a href="{% url 'all_orders' client.id %}" class="client">{{ client.name }}</a></button>
     {% empty %}
         <p>Клиентов не найдено</p>
     {% endfor %}
