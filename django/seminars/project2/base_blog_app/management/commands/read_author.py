@@ -12,6 +12,3 @@ class Command(BaseCommand):
         pk = kwargs.get("pk")
         author = Author.objects.filter(pk=pk).first()
         self.stdout.write(f"Author: {author}")
-
-
-

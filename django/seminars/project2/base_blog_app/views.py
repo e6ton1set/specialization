@@ -54,8 +54,8 @@ def view_comment_article(request, post_id):
     article.show_count += 1
     article.save()
 
-    return render(request, "base_blog_app/template_comment.html", {"article": article,
-                                                                   "comments": comments,
-                                                                   "show_count": article.show_count
-                                                                   }
-                  )
+    return render(
+        request,
+        "base_blog_app/template_comment.html",
+        {"article": article, "comments": comments, "show_count": article.show_count},
+    )
