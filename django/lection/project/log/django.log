@@ -823,3 +823,14 @@ INFO 2023-10-04 16:48:44,379 autoreload 10768 12056 C:\Users\User\PycharmProject
 INFO 2023-10-04 16:48:44,854 autoreload 1112 11148 Watching for file changes with StatReloader
 INFO 2023-10-04 16:48:47,654 views 1112 5256 Получили name='Руслан Маратович Каримов', email='ru-ka-@mail.ru', age=30.
 INFO 2023-10-04 16:48:47,665 basehttp 1112 5256 "POST /lection4/user/add/ HTTP/1.1" 200 1168
+INFO 2023-10-04 17:02:48,331 autoreload 13880 7380 Watching for file changes with StatReloader
+INFO 2023-10-04 17:02:49,341 basehttp 13880 11600 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 17:02:49,674 log 13880 11600 Not Found: /favicon.ico
+WARNING 2023-10-04 17:02:49,675 basehttp 13880 11600 "GET /favicon.ico HTTP/1.1" 404 2536
+WARNING 2023-10-04 17:02:53,569 log 13880 11600 Not Found: /forms
+WARNING 2023-10-04 17:02:53,570 basehttp 13880 11600 "GET /forms HTTP/1.1" 404 2518
+WARNING 2023-10-04 17:03:07,729 log 13880 11600 Not Found: /forms
+WARNING 2023-10-04 17:03:07,730 basehttp 13880 11600 "GET /forms HTTP/1.1" 404 2518
+INFO 2023-10-04 17:03:15,866 basehttp 13880 11600 "GET /lection4/forms HTTP/1.1" 301 0
+INFO 2023-10-04 17:03:15,877 basehttp 13880 8148 "GET /lection4/forms/ HTTP/1.1" 200 1588
+INFO 2023-10-04 17:03:52,106 basehttp 13880 8148 "POST /lection4/forms/ HTTP/1.1" 200 1708
