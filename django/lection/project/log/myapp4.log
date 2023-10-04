@@ -1,0 +1,33 @@
+INFO 2023-10-04 19:41:57,257 autoreload 8936 2972 Watching for file changes with StatReloader
+INFO 2023-10-04 19:41:59,010 basehttp 8936 12588 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 19:41:59,330 log 8936 12588 Not Found: /favicon.ico
+WARNING 2023-10-04 19:41:59,331 basehttp 8936 12588 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 19:42:11,259 basehttp 8936 2324 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 19:42:11,518 log 8936 2324 Not Found: /favicon.ico
+WARNING 2023-10-04 19:42:11,519 basehttp 8936 2324 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 19:42:20,721 basehttp 8936 2324 "GET /lection4/forms/ HTTP/1.1" 200 2205
+INFO 2023-10-04 19:42:51,362 views 8936 2324 Получили form.cleaned_data={'name': 'Руслан', 'email': 'aaada-@mail.ru', 'age': 56, 'height': 34.5, 'is_active': False, 'birthdate': datetime.date(2021, 10, 4), 'gender': 'M', 'message': '556'}
+INFO 2023-10-04 19:42:51,367 basehttp 8936 2324 "POST /lection4/forms/ HTTP/1.1" 200 2284
+INFO 2023-10-04 19:43:08,400 autoreload 8936 2972 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-04 19:43:08,869 autoreload 8404 9772 Watching for file changes with StatReloader
+INFO 2023-10-04 19:43:12,342 autoreload 8404 9772 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-04 19:43:12,785 autoreload 11560 3108 Watching for file changes with StatReloader
+INFO 2023-10-04 19:43:17,082 basehttp 11560 4348 "POST /lection4/forms/ HTTP/1.1" 200 2284
+INFO 2023-10-04 19:43:36,034 autoreload 11560 3108 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-04 19:43:36,501 autoreload 1944 11028 Watching for file changes with StatReloader
+INFO 2023-10-04 19:43:40,666 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2284
+INFO 2023-10-04 19:44:06,337 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2337
+INFO 2023-10-04 19:44:09,062 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:14,511 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:14,692 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:14,856 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:15,008 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:15,166 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:15,325 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2345
+INFO 2023-10-04 19:44:24,840 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2340
+INFO 2023-10-04 19:44:27,855 basehttp 1944 2212 "POST /lection4/forms/ HTTP/1.1" 200 2292
+INFO 2023-10-04 19:46:18,669 autoreload 14276 2648 Watching for file changes with StatReloader
+INFO 2023-10-04 19:46:19,484 basehttp 14276 8752 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 19:46:19,808 log 14276 8752 Not Found: /favicon.ico
+WARNING 2023-10-04 19:46:19,808 basehttp 14276 8752 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 19:46:23,977 basehttp 14276 8752 "GET /lection4/forms/ HTTP/1.1" 200 2209
