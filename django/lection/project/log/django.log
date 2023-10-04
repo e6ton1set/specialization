@@ -773,3 +773,53 @@ INFO 2023-10-02 16:04:56,845 basehttp 10408 14028 "GET /lection3/post/4 HTTP/1.1
 INFO 2023-10-02 16:05:18,217 autoreload 1472 2800 Watching for file changes with StatReloader
 INFO 2023-10-02 16:05:19,822 basehttp 1472 4372 "GET /lection3/author/6 HTTP/1.1" 200 1313
 INFO 2023-10-02 16:05:22,013 basehttp 1472 4372 "GET /lection3/post/5 HTTP/1.1" 200 560
+INFO 2023-10-04 16:27:22,884 autoreload 1668 11148 Watching for file changes with StatReloader
+INFO 2023-10-04 16:28:24,932 autoreload 4548 14240 Watching for file changes with StatReloader
+INFO 2023-10-04 16:29:27,205 autoreload 8068 2684 Watching for file changes with StatReloader
+INFO 2023-10-04 16:29:51,443 autoreload 14016 11904 Watching for file changes with StatReloader
+INFO 2023-10-04 16:32:20,002 autoreload 12540 2564 Watching for file changes with StatReloader
+INFO 2023-10-04 16:33:47,765 autoreload 7912 5124 Watching for file changes with StatReloader
+INFO 2023-10-04 16:39:02,292 autoreload 14204 1240 Watching for file changes with StatReloader
+INFO 2023-10-04 16:39:03,731 basehttp 14204 9800 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 16:39:04,022 log 14204 9800 Not Found: /favicon.ico
+WARNING 2023-10-04 16:39:04,023 basehttp 14204 9800 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 16:39:16,088 basehttp 14204 9800 "GET /lection4/user/add HTTP/1.1" 301 0
+ERROR 2023-10-04 16:39:16,116 log 14204 4208 Internal Server Error: /lection4/user/add/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp4\views.py", line 12, in user_form
+    if form.is_valid():
+       ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+ERROR 2023-10-04 16:39:16,116 basehttp 14204 4208 "GET /lection4/user/add/ HTTP/1.1" 500 67903
+INFO 2023-10-04 16:40:37,006 autoreload 14204 1240 C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp4\views.py changed, reloading.
+INFO 2023-10-04 16:40:37,445 autoreload 14180 12140 Watching for file changes with StatReloader
+ERROR 2023-10-04 16:40:41,563 log 14180 12664 Internal Server Error: /lection4/user/add/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\lection\project\myapp4\views.py", line 12, in user_form
+    if form.is_valid():
+       ^^^^
+UnboundLocalError: cannot access local variable 'form' where it is not associated with a value
+ERROR 2023-10-04 16:40:41,563 basehttp 14180 12664 "GET /lection4/user/add/ HTTP/1.1" 500 68040
+INFO 2023-10-04 16:41:36,390 autoreload 10768 12056 Watching for file changes with StatReloader
+INFO 2023-10-04 16:41:38,787 basehttp 10768 9184 "GET /lection4/user/add/ HTTP/1.1" 200 841
+INFO 2023-10-04 16:45:54,891 basehttp 10768 12228 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 16:45:55,233 log 10768 12228 Not Found: /favicon.ico
+WARNING 2023-10-04 16:45:55,235 basehttp 10768 12228 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 16:46:01,428 basehttp 10768 12228 "GET /lection4/user/add/ HTTP/1.1" 200 1079
+INFO 2023-10-04 16:47:25,942 basehttp 10768 12228 "POST /lection4/user/add/ HTTP/1.1" 200 1168
+INFO 2023-10-04 16:48:44,379 autoreload 10768 12056 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-04 16:48:44,854 autoreload 1112 11148 Watching for file changes with StatReloader
+INFO 2023-10-04 16:48:47,654 views 1112 5256 Получили name='Руслан Маратович Каримов', email='ru-ka-@mail.ru', age=30.
+INFO 2023-10-04 16:48:47,665 basehttp 1112 5256 "POST /lection4/user/add/ HTTP/1.1" 200 1168

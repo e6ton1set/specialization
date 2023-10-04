@@ -23,5 +23,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("prefix/", include("myapp.urls")),
     path("lection3/", include("myapp3.urls")),
+    path("lection4/", include("myapp4.urls")),
     path("", index),
 ]
