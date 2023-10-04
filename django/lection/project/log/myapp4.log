@@ -113,3 +113,10 @@ INFO 2023-10-04 20:18:57,394 autoreload 4768 11824 Watching for file changes wit
 INFO 2023-10-04 20:18:59,882 basehttp 4768 13016 "POST /lection4/user/ HTTP/1.1" 200 1205
 INFO 2023-10-04 20:19:02,301 basehttp 4768 13016 "POST /lection4/user/ HTTP/1.1" 200 1205
 INFO 2023-10-04 20:19:08,644 basehttp 4768 13016 "POST /lection4/user/ HTTP/1.1" 200 1240
+INFO 2023-10-04 20:31:46,639 autoreload 12876 14308 Watching for file changes with StatReloader
+INFO 2023-10-04 20:31:50,874 basehttp 12876 7660 "GET / HTTP/1.1" 200 376
+WARNING 2023-10-04 20:31:51,357 log 12876 7660 Not Found: /favicon.ico
+WARNING 2023-10-04 20:31:51,357 basehttp 12876 7660 "GET /favicon.ico HTTP/1.1" 404 2536
+INFO 2023-10-04 20:32:00,236 basehttp 12876 7660 "GET /lection4/upload HTTP/1.1" 301 0
+INFO 2023-10-04 20:32:00,251 basehttp 12876 7680 "GET /lection4/upload/ HTTP/1.1" 200 796
+INFO 2023-10-04 20:32:59,462 basehttp 12876 7680 "POST /lection4/upload/ HTTP/1.1" 200 796

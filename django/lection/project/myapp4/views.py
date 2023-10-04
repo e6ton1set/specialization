@@ -1,6 +1,8 @@
 import logging
+
+from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render
-from myapp4.forms import UserForm, ManyFieldsForm, ManyFieldsFormWidget
+from myapp4.forms import UserForm, ManyFieldsForm, ManyFieldsFormWidget, ImageForm
 from myapp4.models import User
 
 logger = logging.getLogger(__name__)
@@ -46,5 +48,17 @@ def add_user(request):
         form = UserForm()
         message = 'Заполните форму'
     return render(request, 'myapp4/user_form.html', {'form': form, 'message': message})
+
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+    else:
+        form = ImageForm()
+    return render(request, 'myapp4/upload_image.html', {'form': form})
 
 
