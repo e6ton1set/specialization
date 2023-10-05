@@ -1,8 +1,10 @@
 from datetime import timedelta
 
+from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 
+from online_store_app.forms import ProductForm
 from online_store_app.models import Client, Product, Order
 
 
@@ -61,3 +63,24 @@ def orders_by_time(request):
             'days': time_period
         })
     return render(request, 'online_store_app/orders_by_time.html', context)
+
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        message = "Ошибка в данных"
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            amount = form.cleaned_data['amount']
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            product = Product(name=name, description=description, price=price, amount=amount, image=image)
+            product.save()
+            message = "Продукт сохранён"
+    else:
+        form = ProductForm()
+        message = "Заполните форму"
+    return render(request, 'online_store_app/upload_image.html', {'form': form, "message": message})
