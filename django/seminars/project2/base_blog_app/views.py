@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 import logging
 from django.shortcuts import render, get_object_or_404
-
+from base_blog_app.forms import AuthorForm, ArticleForm
 from base_blog_app.models import Author, Article, Comment
 
 logger = logging.getLogger(__name__)
@@ -59,3 +59,33 @@ def view_comment_article(request, post_id):
         "base_blog_app/template_comment.html",
         {"article": article, "comments": comments, "show_count": article.show_count},
     )
+
+
+def create_author_form(request):
+    if request.method == "POST":
+        form = AuthorForm(request.POST)
+        message = "Ошибка в данных"
+        if form.is_valid():
+            author = Author(first_name=form.cleaned_data["first_name"],
+                            last_name=form.cleaned_data["last_name"],
+                            email=form.cleaned_data["email"],
+                            biography=form.cleaned_data["biography"],
+                            birthday=form.cleaned_data["birthday"])
+            author.save()
+            message = "Пользователь сохранён"
+    else:
+        form = AuthorForm()
+        message = "Заполните форму"
+    return render(request, "base_blog_app/create_author_form.html", {"form": form, "message": message})
+
+
+def create_article_form(request):
+    if request.method == "POST":
+        form = ArticleForm(request.POST)
+        if form.is_valid():
+            form.save()
+            message = "Статья сохранена"
+    else:
+        form = ArticleForm()
+        message = "Заполните форму"
+    return render(request, "base_blog_app/create_article_form.html", {"form": form, "message": message})
