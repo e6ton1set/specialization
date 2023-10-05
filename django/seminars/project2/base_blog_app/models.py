@@ -32,8 +32,8 @@ class Article(models.Model):
 
 
 class Comment(models.Model):
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, default=4)
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, default=4)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
     comment = models.TextField()
     is_published = models.DateTimeField(default=now)
     updated = models.DateTimeField(default=now)

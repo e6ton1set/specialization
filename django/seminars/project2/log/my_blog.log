@@ -1018,3 +1018,686 @@ ERROR "GET /create_article_form/ HTTP/1.1" 500 83798
 INFO "GET /create_article_form/ HTTP/1.1" 200 0
 INFO "GET /create_article_form/ HTTP/1.1" 200 2318
 INFO "POST /create_article_form/ HTTP/1.1" 200 2373
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /create_comment_form HTTP/1.1" 301 0
+INFO "GET /create_comment_form/ HTTP/1.1" 200 4554
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4602
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4142
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4114
+INFO "GET /view_all_articles HTTP/1.1" 301 0
+INFO "GET /view_all_articles/ HTTP/1.1" 200 11763
+INFO "GET /view_article/31 HTTP/1.1" 200 431
+INFO "GET /view_article/50 HTTP/1.1" 200 431
+INFO "GET /create_comment_form/ HTTP/1.1" 200 4094
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4114
+INFO "GET /view_article/1 HTTP/1.1" 200 431
+INFO "GET /view_article/6 HTTP/1.1" 200 431
+INFO "GET /view_article/11 HTTP/1.1" 200 431
+INFO "GET /view_article/21 HTTP/1.1" 200 431
+INFO "GET /view_article/26 HTTP/1.1" 200 431
+INFO "GET /view_article/31 HTTP/1.1" 200 431
+INFO "GET /view_article/36 HTTP/1.1" 200 431
+INFO "GET /view_article/41 HTTP/1.1" 200 431
+INFO "GET /view_article/46 HTTP/1.1" 200 431
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /view_all_articles/ HTTP/1.1" 200 11763
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /view_all_articles/ HTTP/1.1" 200 11763
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: base_blog_app_comment.author_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 98, in create_comment_form
+    form.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\models.py", line 542, in save
+    self.instance.save()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: base_blog_app_comment.author_id
+ERROR "POST /create_comment_form/ HTTP/1.1" 500 156393
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /view_all_articles/ HTTP/1.1" 200 11763
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4210
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4231
+WARNING Not Found: /view_all_articles/1
+WARNING "GET /view_all_articles/1 HTTP/1.1" 404 4032
+INFO "GET /view_comment_article/1 HTTP/1.1" 200 1053
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /view_comment_article/1 HTTP/1.1" 200 1053
+WARNING Not Found: /view_all_articles/1
+WARNING "GET /view_all_articles/1 HTTP/1.1" 404 4032
+INFO "GET /view_all_articles/ HTTP/1.1" 200 505563
+INFO "GET /view_article/14 HTTP/1.1" 200 431
+INFO "GET /view_article/1 HTTP/1.1" 200 431
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 98, in create_comment_form
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 440, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+                                              ^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 220, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BooleanField' object has no attribute 'value_from_datadict'
+ERROR "POST /create_comment_form/ HTTP/1.1" 500 93665
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 97, in create_comment_form
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 440, in _clean_fields
+    value = bf.initial if field.disabled else bf.data
+                                              ^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in data
+    return self.form._widget_data_value(self.field.widget, self.html_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 220, in _widget_data_value
+    return widget.value_from_datadict(self.data, self.files, html_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BooleanField' object has no attribute 'value_from_datadict'
+ERROR "POST /create_comment_form/ HTTP/1.1" 500 93665
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 103, in create_comment_form
+    return render(request, "base_blog_app/create_comment_form.html", {"form": form, "message": message})
+                                                                                               ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR "POST /create_comment_form/ HTTP/1.1" 500 68910
+INFO "GET /view_all_articles/ HTTP/1.1" 200 11763
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4231
+INFO "POST /create_comment_form/ HTTP/1.1" 200 4231
+ERROR Internal Server Error: /create_article_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 91, in create_article_form
+    return render(request, "base_blog_app/create_article_form.html", {"form": form, "message": message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 67, in render
+    context = context or self.get_context()
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 325, in get_context
+    if bf.is_hidden:
+       ^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 235, in is_hidden
+    return self.field.widget.is_hidden
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BooleanField' object has no attribute 'is_hidden'
+ERROR "GET /create_article_form/ HTTP/1.1" 500 183537
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_article_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 91, in create_article_form
+    return render(request, "base_blog_app/create_article_form.html", {"form": form, "message": message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 67, in render
+    context = context or self.get_context()
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 325, in get_context
+    if bf.is_hidden:
+       ^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 235, in is_hidden
+    return self.field.widget.is_hidden
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BooleanField' object has no attribute 'is_hidden'
+ERROR "GET /create_article_form/ HTTP/1.1" 500 183755
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_article_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 91, in create_article_form
+    return render(request, "base_blog_app/create_article_form.html", {"form": form, "message": message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 84, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\utils.py", line 67, in render
+    context = context or self.get_context()
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 325, in get_context
+    if bf.is_hidden:
+       ^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 235, in is_hidden
+    return self.field.widget.is_hidden
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BooleanField' object has no attribute 'is_hidden'
+ERROR "GET /create_article_form/ HTTP/1.1" 500 183755
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\forms.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /create_article_form/ HTTP/1.1" 200 2270
+INFO "POST /create_article_form/ HTTP/1.1" 200 2333
+INFO "GET /view_all_articles/ HTTP/1.1" 200 12005
+INFO "GET /view_article/52 HTTP/1.1" 200 437
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /view_all_articles/ HTTP/1.1" 200 12005
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/46 HTTP/1.1" 200 475
+INFO "GET /view_article/52 HTTP/1.1" 200 481
+INFO "GET /view_article/52 HTTP/1.1" 200 481
+INFO "GET /view_article/52 HTTP/1.1" 200 481
+INFO "GET /create_author_form/ HTTP/1.1" 200 1479
+INFO "GET /create_comment_form/ HTTP/1.1" 200 4331
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 103, in create_comment_form
+    article = get_object_or_404(Article, pk=request.POST[""])
+                                            ~~~~~~~~~~~~^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: ''
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 76099
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 4008
+INFO "GET / HTTP/1.1" 200 10
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 4008
+INFO "GET /create_comment_form/ HTTP/1.1" 200 4331
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 4008
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_comment_form() missing 1 required positional argument: 'article_id'
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 64319
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 105, in create_comment_form
+    return render(request, "base_blog_app/create_comment_form.html", {"form": form, "message": message, "article": article})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'template_article' not found. 'template_article' is not a valid view function or pattern name.
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 166948
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: create_comment_form() missing 1 required positional argument: 'article_id'
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 64456
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 103, in create_comment_form
+    article = Article.objects.filter(id=article_id).first()
+                                        ^^^^^^^^^^
+NameError: name 'article_id' is not defined
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 67886
+ERROR Internal Server Error: /create_comment_form/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 103, in create_comment_form
+    article = Article.objects.filter(id=article_id).first()
+                                        ^^^^^^^^^^
+NameError: name 'article_id' is not defined
+ERROR "GET /create_comment_form/ HTTP/1.1" 500 67886
+INFO "GET /view_comment_article/1 HTTP/1.1" 200 1208
+INFO "GET /view_comment_article/1 HTTP/1.1" 200 1208
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 4008
+INFO "GET /create_article_form/ HTTP/1.1" 200 2270
+INFO "GET / HTTP/1.1" 200 10
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 4008
+INFO "GET /view_comment_article/52 HTTP/1.1" 200 565
+INFO "GET /view_comment_article/51 HTTP/1.1" 200 1114

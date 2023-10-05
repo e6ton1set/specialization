@@ -11,4 +11,5 @@ urlpatterns = [
     path("view_comment_article/<int:post_id>", views.view_comment_article, name="view_comment_article"),
     path("create_author_form/", views.create_author_form, name="create_author_form"),
     path("create_article_form/", views.create_article_form, name="create_article_form"),
+    path("create_comment_form/", views.create_comment_form, name="create_comment_form"),
 ]

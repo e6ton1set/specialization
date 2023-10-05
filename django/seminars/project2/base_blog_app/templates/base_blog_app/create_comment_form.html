@@ -1,0 +1,15 @@
+{% extends "base_blog_app/base.html" %}
+{% block title %} Добавление комментария по выбору автора и статьи {% endblock %}
+
+{% block content %}
+    <h3>{{ article.title }}</h3>
+    <br>
+    <p>{{ article.text }}</p>
+    <br>
+    <p>Просмотров: {{ show_count }}</p>
+    <form action="{% url 'articles_by_author' article_id %}" method="post">
+        {% csrf_token %} {{ form.as_p }} <input type="submit" value="Сохранить">
+        <p>{{ message }}</p>
+    </form>
+{% endblock %}
+

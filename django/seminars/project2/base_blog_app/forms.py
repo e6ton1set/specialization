@@ -30,10 +30,20 @@ class AuthorForm(forms.Form):
 class ArticleForm(forms.ModelForm):
     class Meta:
         model = models.Article
-        fields = ["author", "title", "content", "author", "published"]
-        labels = {"author": "", "title": "", "content": "", "published": ""}
+        fields = ["author", "title", "content", "author", "is_published"]
+        labels = {"author": "", "title": "", "content": "", "is_published": ""}
         widgets = {
             "author": forms.Select(attrs={"class": "input-text long-input", "placeholder": "Выберите автора"}),
             "title": forms.TextInput(attrs={"class": "input-text long-input", "placeholder": "Название статьи"}),
-            "content": forms.Textarea(attrs={"class": "input-text long_input", "placeholder": "Текст статьи"}),
-            "published": forms.DateInput(attrs={"class": "input-text long-input", "type": "date"}), }
+            "content": forms.Textarea(attrs={"class": "input-text long_input", "placeholder": "Текст статьи"})}
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = models.Comment
+        fields = ["author", "article", "comment"]
+        labels = {"author": "", "article": "", "comment": ""}
+        widgets = {
+            "author": forms.Select(attrs={"class": "input-text long-input", "placeholder": "Выберите автора"}),
+            "article": forms.Select(attrs={"class": "input-text long-input", "placeholder": "Выберите статью"}),
+            "comment": forms.Textarea(attrs={"class": "input-text long_input", "placeholder": "Текст комментария"})}

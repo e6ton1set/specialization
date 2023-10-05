@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 import logging
 from django.shortcuts import render, get_object_or_404
-from base_blog_app.forms import AuthorForm, ArticleForm
+from base_blog_app.forms import AuthorForm, ArticleForm, CommentForm
 from base_blog_app.models import Author, Article, Comment
 
 logger = logging.getLogger(__name__)
@@ -40,7 +40,7 @@ def view_all_articles(request):
 
 def view_article(request, article_id):
     article = Article.objects.get(id=article_id)
-    context = {"title": article.title, "text": article.content}
+    context = {"title": article.title, "text": article.content, "show_count": article.show_count}
 
     article.show_count += 1
     article.save()
@@ -89,3 +89,16 @@ def create_article_form(request):
         form = ArticleForm()
         message = "Заполните форму"
     return render(request, "base_blog_app/create_article_form.html", {"form": form, "message": message})
+
+
+def create_comment_form(request):
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        message = "Ошибка в данных"
+        if form.is_valid():
+            form.save()
+            message = "Комментарий сохранён"
+    else:
+        form = CommentForm()
+        message = "Заполните форму"
+    return render(request, "base_blog_app/create_comment_form.html", {"form": form, "message": message})
