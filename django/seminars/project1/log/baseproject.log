@@ -1,248 +1,20 @@
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
-INFO "GET / HTTP/1.1" 200 22
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\models.py changed, reloading.
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO "GET / HTTP/1.1" 200 22
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 8
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 8
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 8
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO Used eagle_or_tails
-ERROR Internal Server Error: /test/game1/
-Traceback (most recent call last):
-  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 24, in eagle_or_tails
-    return HttpResponse(**data)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\http\response.py", line 374, in __init__
-    super().__init__(*args, **kwargs)
-TypeError: HttpResponseBase.__init__() got an unexpected keyword argument 'Îð¸ë'
-ERROR "GET /test/game1/ HTTP/1.1" 500 72539
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 18
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO "GET / HTTP/1.1" 200 22
-WARNING Not Found: /favicon.ico
-WARNING "GET /favicon.ico HTTP/1.1" 404 2483
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 32
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 82
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 48
-INFO C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
-INFO "GET / HTTP/1.1" 200 22
-WARNING Not Found: /favicon.ico
-WARNING "GET /favicon.ico HTTP/1.1" 404 2483
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO "GET / HTTP/1.1" 200 22
-WARNING Not Found: /favicon.ico
-WARNING "GET /favicon.ico HTTP/1.1" 404 2487
-WARNING Not Found: /game1
-WARNING "GET /game1 HTTP/1.1" 404 2469
-INFO Used index
-INFO "GET /test/ HTTP/1.1" 200 13
-INFO "GET /test/game1 HTTP/1.1" 301 0
-INFO Used eagle_or_tails
-ERROR Internal Server Error: /test/game1/
+INFO 2023-10-06 15:35:19,114 autoreload 7988 2436 Watching for file changes with StatReloader
+INFO 2023-10-06 15:35:48,859 autoreload 14876 11728 Watching for file changes with StatReloader
+INFO 2023-10-06 15:36:57,990 autoreload 14876 11728 C:\Users\User\PycharmProjects\specialization\django\seminars\project1\baseproject\settings.py changed, reloading.
+INFO 2023-10-06 15:36:58,480 autoreload 6544 4460 Watching for file changes with StatReloader
+INFO 2023-10-06 15:37:24,476 autoreload 6544 4460 C:\Users\User\PycharmProjects\specialization\django\seminars\project1\testapp\urls.py changed, reloading.
+INFO 2023-10-06 15:37:24,909 autoreload 11424 5284 Watching for file changes with StatReloader
+INFO 2023-10-06 15:40:18,992 autoreload 11200 9312 Watching for file changes with StatReloader
+INFO 2023-10-06 15:40:46,808 autoreload 10624 13160 Watching for file changes with StatReloader
+INFO 2023-10-06 15:41:27,351 autoreload 2716 16208 Watching for file changes with StatReloader
+INFO 2023-10-06 15:41:28,699 basehttp 2716 15412 "GET / HTTP/1.1" 200 22
+WARNING 2023-10-06 15:41:29,066 log 2716 15412 Not Found: /favicon.ico
+WARNING 2023-10-06 15:41:29,067 basehttp 2716 15412 "GET /favicon.ico HTTP/1.1" 404 2487
+WARNING 2023-10-06 15:41:33,701 log 2716 15412 Not Found: /game1
+WARNING 2023-10-06 15:41:33,701 basehttp 2716 15412 "GET /game1 HTTP/1.1" 404 2469
+INFO 2023-10-06 15:41:43,221 basehttp 2716 15412 "GET /test/ HTTP/1.1" 200 13
+INFO 2023-10-06 15:41:47,310 basehttp 2716 15412 "GET /test/game1 HTTP/1.1" 301 0
+ERROR 2023-10-06 15:41:47,380 log 2716 13576 Internal Server Error: /test/game1/
 Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
     return self.cursor.execute(sql, params)
@@ -302,16 +74,16 @@ Traceback (most recent call last):
     return super().execute(query, params)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.OperationalError: no such table: testapp_eagletails
-ERROR "GET /test/game1/ HTTP/1.1" 500 147505
-INFO "GET /games/game2 HTTP/1.1" 301 0
-INFO Game 2 is used
-INFO "GET /games/game2/ HTTP/1.1" 200 43
-INFO "GET /games/game1 HTTP/1.1" 301 0
-INFO Game 1 is used
-INFO "GET /games/game1/ HTTP/1.1" 200 23
-WARNING Not Found: /games/statistic/
-WARNING "GET /games/statistic/ HTTP/1.1" 404 2942
-ERROR Internal Server Error: /admin/
+ERROR 2023-10-06 15:41:47,394 basehttp 2716 13576 "GET /test/game1/ HTTP/1.1" 500 147505
+INFO 2023-10-06 15:41:57,652 basehttp 2716 13576 "GET /games/game2 HTTP/1.1" 301 0
+INFO 2023-10-06 15:41:57,660 views 2716 5136 Game 2 is used
+INFO 2023-10-06 15:41:57,661 basehttp 2716 5136 "GET /games/game2/ HTTP/1.1" 200 43
+INFO 2023-10-06 15:42:02,187 basehttp 2716 5136 "GET /games/game1 HTTP/1.1" 301 0
+INFO 2023-10-06 15:42:02,192 views 2716 14884 Game 1 is used
+INFO 2023-10-06 15:42:02,193 basehttp 2716 14884 "GET /games/game1/ HTTP/1.1" 200 23
+WARNING 2023-10-06 15:42:05,035 log 2716 14884 Not Found: /games/statistic/
+WARNING 2023-10-06 15:42:05,036 basehttp 2716 14884 "GET /games/statistic/ HTTP/1.1" 404 2942
+ERROR 2023-10-06 15:42:16,234 log 2716 14884 Internal Server Error: /admin/
 Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
     return self._session_cache
@@ -418,9 +190,8 @@ Traceback (most recent call last):
     return super().execute(query, params)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.OperationalError: no such table: django_session
-ERROR "GET /admin/ HTTP/1.1" 500 201082
-INFO Used eagle_or_tails
-ERROR Internal Server Error: /test/game1/
+ERROR 2023-10-06 15:42:16,242 basehttp 2716 14884 "GET /admin/ HTTP/1.1" 500 201082
+ERROR 2023-10-06 15:43:39,899 log 2716 14884 Internal Server Error: /test/game1/
 Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
     return self.cursor.execute(sql, params)
@@ -480,78 +251,57 @@ Traceback (most recent call last):
     return super().execute(query, params)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 django.db.utils.OperationalError: no such table: testapp_eagletails
-ERROR "GET /test/game1/ HTTP/1.1" 500 147505
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO Used eagle_or_tails
-INFO "GET /test/game1/ HTTP/1.1" 200 94
-INFO "GET / HTTP/1.1" 200 22
-WARNING Not Found: /favicon.ico
-WARNING "GET /favicon.ico HTTP/1.1" 404 2487
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
-INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
-INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
-INFO "GET / HTTP/1.1" 200 22
-WARNING Not Found: /favicon.ico
-WARNING "GET /favicon.ico HTTP/1.1" 404 2487
-WARNING Not Found: /about
-WARNING "GET /about HTTP/1.1" 404 2469
-INFO "GET /admin/ HTTP/1.1" 302 0
-INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
-INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
-INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
-INFO "GET /admin/ HTTP/1.1" 200 6570
-INFO "GET /admin/testapp/eagletails/ HTTP/1.1" 200 15189
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
-INFO "GET /admin/testapp/eagletails/1/change/ HTTP/1.1" 200 10200
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
-INFO "GET /admin/testapp/eagletails/ HTTP/1.1" 200 15189
-INFO "POST /admin/testapp/eagletails/ HTTP/1.1" 200 8306
-INFO "POST /admin/testapp/eagletails/ HTTP/1.1" 302 0
-INFO "GET /admin/testapp/eagletails/ HTTP/1.1" 200 14820
-INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+ERROR 2023-10-06 15:43:39,899 basehttp 2716 14884 "GET /test/game1/ HTTP/1.1" 500 147505
+INFO 2023-10-06 15:44:39,672 autoreload 6396 13248 Watching for file changes with StatReloader
+INFO 2023-10-06 15:44:42,284 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:49,286 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:49,930 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:50,663 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:51,278 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:51,783 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:52,165 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:52,345 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:52,550 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:52,740 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:52,917 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:53,263 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:53,443 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:53,608 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:53,797 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:53,959 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:54,175 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:54,342 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:54,550 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:54,724 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:54,926 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:55,107 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:55,309 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:44:55,476 basehttp 6396 5768 "GET /test/game1/ HTTP/1.1" 200 94
+INFO 2023-10-06 15:49:28,518 autoreload 10820 14676 Watching for file changes with StatReloader
+INFO 2023-10-06 15:49:29,866 basehttp 10820 8196 "GET / HTTP/1.1" 200 22
+WARNING 2023-10-06 15:49:30,163 log 10820 8196 Not Found: /favicon.ico
+WARNING 2023-10-06 15:49:30,164 basehttp 10820 8196 "GET /favicon.ico HTTP/1.1" 404 2487
+INFO 2023-10-06 15:49:36,732 basehttp 10820 8196 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-06 15:49:36,766 basehttp 10820 8196 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-06 15:49:42,094 basehttp 10820 8196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO 2023-10-06 15:49:47,389 basehttp 10820 8196 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO 2023-10-06 15:53:23,877 autoreload 11240 9772 Watching for file changes with StatReloader
+INFO 2023-10-06 15:53:24,724 basehttp 11240 12364 "GET / HTTP/1.1" 200 22
+WARNING 2023-10-06 15:53:25,039 log 11240 12364 Not Found: /favicon.ico
+WARNING 2023-10-06 15:53:25,039 basehttp 11240 12364 "GET /favicon.ico HTTP/1.1" 404 2487
+WARNING 2023-10-06 15:53:26,936 log 11240 12364 Not Found: /about
+WARNING 2023-10-06 15:53:26,937 basehttp 11240 12364 "GET /about HTTP/1.1" 404 2469
+INFO 2023-10-06 15:53:31,700 basehttp 11240 12364 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-10-06 15:53:31,718 basehttp 11240 12364 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-10-06 15:53:34,305 basehttp 11240 12364 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4534
+INFO 2023-10-06 15:53:38,479 basehttp 11240 12364 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-10-06 15:53:38,497 basehttp 11240 12364 "GET /admin/ HTTP/1.1" 200 6570
+INFO 2023-10-06 15:53:43,060 basehttp 11240 12364 "GET /admin/testapp/eagletails/ HTTP/1.1" 200 15189
+INFO 2023-10-06 15:53:43,092 basehttp 11240 12364 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-06 15:53:55,170 basehttp 11240 12364 "GET /admin/testapp/eagletails/1/change/ HTTP/1.1" 200 10200
+INFO 2023-10-06 15:53:55,192 basehttp 11240 12364 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-10-06 15:54:01,068 basehttp 11240 12364 "GET /admin/testapp/eagletails/ HTTP/1.1" 200 15189
+INFO 2023-10-06 15:54:09,264 basehttp 11240 12364 "POST /admin/testapp/eagletails/ HTTP/1.1" 200 8306
+INFO 2023-10-06 15:54:10,481 basehttp 11240 12364 "POST /admin/testapp/eagletails/ HTTP/1.1" 302 0
+INFO 2023-10-06 15:54:10,494 basehttp 11240 12364 "GET /admin/testapp/eagletails/ HTTP/1.1" 200 14820
+INFO 2023-10-06 15:54:10,519 basehttp 11240 12364 "GET /admin/jsi18n/ HTTP/1.1" 200 16066

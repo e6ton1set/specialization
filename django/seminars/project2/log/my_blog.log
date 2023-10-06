@@ -1701,3 +1701,38 @@ WARNING Not Found: /favicon.ico
 WARNING "GET /favicon.ico HTTP/1.1" 404 4008
 INFO "GET /view_comment_article/52 HTTP/1.1" 200 565
 INFO "GET /view_comment_article/51 HTTP/1.1" 200 1114
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/testapp/eagletails/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/testapp/eagletails/ HTTP/1.1" 200 4219
+INFO "POST /admin/login/?next=/admin/testapp/eagletails/ HTTP/1.1" 200 4388
+INFO Watching for file changes with StatReloader
+INFO "POST /admin/login/?next=/admin/testapp/eagletails/ HTTP/1.1" 302 0
+WARNING Not Found: /admin/testapp/eagletails/
+WARNING "GET /admin/testapp/eagletails/ HTTP/1.1" 404 4891
+INFO "GET /admin/ HTTP/1.1" 200 7153
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20340
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/ HTTP/1.1" 200 7153
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 14076
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/ HTTP/1.1" 200 7153
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7529
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /admin/ HTTP/1.1" 200 7529
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 14572
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/ HTTP/1.1" 200 7529
+INFO "GET /admin/base_blog_app/comment/ HTTP/1.1" 200 34415
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/comment/?all= HTTP/1.1" 200 48160
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/comment/ HTTP/1.1" 200 34415
+INFO "GET /admin/ HTTP/1.1" 200 7529
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 14572
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/ HTTP/1.1" 200 7529
