@@ -1,3 +1,4 @@
 from django.contrib import admin
+from testapp.models import EagleTails
 
-# Register your models here.
+admin.site.register(EagleTails)

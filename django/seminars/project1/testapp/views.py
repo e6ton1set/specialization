@@ -1,7 +1,7 @@
 import logging
 import random
 from django.http import HttpResponse
-from testproject.testapp.models import EagleTails
+from testapp.models import EagleTails
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
