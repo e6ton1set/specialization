@@ -631,3 +631,40 @@ INFO 2023-10-06 12:02:18,412 autoreload 2152 668 Watching for file changes with 
 INFO 2023-10-06 12:02:28,153 basehttp 2152 10388 "GET /admin/myapp5/product/3/change/ HTTP/1.1" 200 15630
 INFO 2023-10-06 12:02:28,175 basehttp 2152 10388 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
 INFO 2023-10-06 12:02:28,227 basehttp 2152 5884 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2023-10-06 18:27:47,005 autoreload 8732 12380 Watching for file changes with StatReloader
+INFO 2023-10-06 18:29:31,275 autoreload 2392 16380 Watching for file changes with StatReloader
+INFO 2023-10-06 18:29:45,838 autoreload 2392 16380 C:\Users\User\PycharmProjects\specialization\django\lection\project\project\settings.py changed, reloading.
+INFO 2023-10-06 18:29:46,499 autoreload 13780 11452 Watching for file changes with StatReloader
+INFO 2023-10-06 18:29:50,521 basehttp 13780 8644 "GET / HTTP/1.1" 200 10146
+INFO 2023-10-06 18:29:50,590 basehttp 13780 8644 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-10-06 18:29:50,590 basehttp 13780 8668 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-10-06 18:29:50,590 basehttp 13780 10244 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-10-06 18:29:50,625 basehttp 13780 10244 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2023-10-06 18:29:50,701 log 13780 10244 Not Found: /favicon.ico
+WARNING 2023-10-06 18:29:50,702 basehttp 13780 10244 "GET /favicon.ico HTTP/1.1" 404 12408
+INFO 2023-10-06 18:30:39,112 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=HistoryPanel HTTP/1.1" 200 4150
+INFO 2023-10-06 18:30:39,121 basehttp 13780 10244 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3330
+INFO 2023-10-06 18:30:41,761 basehttp 13780 10244 "GET /__debug__/history_sidebar/?store_id=3d58df6ed0f043e8ba5867cef3901c10&exclude_history=True HTTP/1.1" 200 10758
+INFO 2023-10-06 18:30:42,856 basehttp 13780 10244 "GET /__debug__/history_sidebar/?store_id=38f0bba4ece64c0f9c71cbe20502012b&exclude_history=True HTTP/1.1" 200 10764
+INFO 2023-10-06 18:30:44,344 basehttp 13780 10244 "GET /__debug__/history_sidebar/?store_id=3d58df6ed0f043e8ba5867cef3901c10&exclude_history=True HTTP/1.1" 200 10758
+INFO 2023-10-06 18:30:46,044 basehttp 13780 10244 "GET /__debug__/history_sidebar/?store_id=38f0bba4ece64c0f9c71cbe20502012b&exclude_history=True HTTP/1.1" 200 10764
+INFO 2023-10-06 18:30:49,911 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=VersionsPanel HTTP/1.1" 200 760
+INFO 2023-10-06 18:31:02,151 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=SettingsPanel HTTP/1.1" 200 26976
+INFO 2023-10-06 18:31:14,521 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=HeadersPanel HTTP/1.1" 200 5337
+INFO 2023-10-06 18:31:46,418 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=RequestPanel HTTP/1.1" 200 1606
+INFO 2023-10-06 18:32:16,888 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=SQLPanel HTTP/1.1" 200 15758
+INFO 2023-10-06 18:32:52,273 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=StaticFilesPanel HTTP/1.1" 200 34483
+INFO 2023-10-06 18:33:16,280 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=TemplatesPanel HTTP/1.1" 200 6266
+INFO 2023-10-06 18:33:20,040 basehttp 13780 10244 "GET /__debug__/template_source/?template=myapp3/index.html&template_origin=IkM6XFxVc2Vyc1xcVXNlclxcUHljaGFybVByb2plY3RzXFxzcGVjaWFsaXphdGlvblxcZGphbmdvXFxsZWN0aW9uXFxwcm9qZWN0XFxteWFwcDNcXHRlbXBsYXRlc1xcbXlhcHAzXFxpbmRleC5odG1sIg:1qoktq:TCyNOKu-kN9D0LGnjKl1johDyau5bsY5dXbSD514rmk HTTP/1.1" 200 815
+INFO 2023-10-06 18:33:28,534 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2023-10-06 18:33:37,393 basehttp 13780 10244 "GET /__debug__/render_panel/?store_id=38f0bba4ece64c0f9c71cbe20502012b&panel_id=SignalsPanel HTTP/1.1" 200 2265
+WARNING 2023-10-06 18:52:54,551 log 13780 4572 Not Found: /about
+WARNING 2023-10-06 18:52:54,551 basehttp 13780 4572 "GET /about HTTP/1.1" 404 12811
+INFO 2023-10-06 18:52:54,571 basehttp 13780 6628 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-06 18:52:54,571 basehttp 13780 4572 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-06 18:52:54,574 basehttp 13780 15652 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-06 18:52:54,577 basehttp 13780 15652 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2023-10-06 18:53:01,006 basehttp 13780 15652 "GET /prefix HTTP/1.1" 301 0
+INFO 2023-10-06 18:53:01,027 basehttp 13780 4572 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2023-10-06 18:53:20,251 basehttp 13780 4572 "GET /__debug__/render_panel/?store_id=242aecebbba540b8897efd34613b0ff0&panel_id=ProfilingPanel HTTP/1.1" 200 50183
+INFO 2023-10-06 18:53:44,592 basehttp 13780 4572 "GET / HTTP/1.1" 200 10149
