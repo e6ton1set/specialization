@@ -2090,3 +2090,120 @@ INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 19660
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
 INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 19660
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+WARNING Not Found: /base_site
+WARNING "GET /base_site HTTP/1.1" 404 4002
+WARNING Not Found: /admin/base_site
+WARNING "GET /admin/base_site HTTP/1.1" 404 4861
+INFO Watching for file changes with StatReloader
+INFO "GET / HTTP/1.1" 200 10
+INFO "GET /admin/ HTTP/1.1" 200 7566
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7566
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7566
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7566
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7566
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO "GET /admin/ HTTP/1.1" 200 7459
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7512
+INFO "GET /admin/ HTTP/1.1" 200 7512
+INFO "GET /admin/ HTTP/1.1" 200 7512
+INFO "GET /admin/ HTTP/1.1" 200 7512
+INFO "GET /admin/ HTTP/1.1" 200 7512
+INFO "GET /admin/ HTTP/1.1" 200 7549
+INFO "GET /admin/ HTTP/1.1" 200 7549
+INFO "GET /admin/ HTTP/1.1" 200 7547
+INFO "GET /admin/ HTTP/1.1" 200 7553
+INFO "GET /admin/ HTTP/1.1" 200 7553
+INFO "GET /admin/ HTTP/1.1" 200 7553
+INFO "GET /admin/ HTTP/1.1" 200 7546
+INFO "GET /admin/ HTTP/1.1" 200 7547
+INFO "GET /admin/ HTTP/1.1" 200 7551
+INFO "GET /admin/ HTTP/1.1" 200 7547
+INFO "GET /admin/ HTTP/1.1" 200 7547
+INFO "GET /admin/ HTTP/1.1" 200 7555
+INFO "GET /admin/ HTTP/1.1" 200 7554
+INFO "GET /admin/ HTTP/1.1" 200 7523
+WARNING "GET /static/css/admin_style.css HTTP/1.1" 404 1816
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7631
+INFO "GET /base_blog_app/static/css/admin_style.css HTTP/1.1" 200 46
+INFO "GET /base_blog_app/static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO "GET /base_blog_app/static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO "GET /base_blog_app/static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO "GET /base_blog_app/static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO "GET /base_blog_app/static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO "GET /base_blog_app/static/admin/css/base.css HTTP/1.1" 200 21207
+INFO "GET /base_blog_app/static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO "GET /base_blog_app/static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /base_blog_app/static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO "GET /base_blog_app/static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7635
+INFO "GET /base_blog_app/static/css/admin_style.css HTTP/1.1" 304 0
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7635
+INFO "GET /base_blog_app/static/css/admin_style.css HTTP/1.1" 304 0
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7635
+INFO "GET /base_blog_app/static/css/admin_style.css HTTP/1.1" 304 0
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 7635
+INFO "GET /base_blog_app/static/css/admin_style.css HTTP/1.1" 304 0
+INFO "GET /admin/base_blog_app/article/add/ HTTP/1.1" 200 11952
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /base_blog_app/static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO "GET /base_blog_app/static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO "GET /base_blog_app/static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /base_blog_app/static/admin/js/core.js HTTP/1.1" 200 5682
+INFO "GET /base_blog_app/static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO "GET /base_blog_app/static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO "GET /base_blog_app/static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /base_blog_app/static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /base_blog_app/static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO "GET /base_blog_app/static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /base_blog_app/static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /base_blog_app/static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO "GET /base_blog_app/static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO "GET /admin/ HTTP/1.1" 200 7635
+WARNING Not Found: /admin/material
+WARNING "GET /admin/material HTTP/1.1" 404 4858
+WARNING Not Found: /material
+WARNING "GET /material HTTP/1.1" 404 2211
+WARNING Not Found: /material/
+WARNING "GET /material/ HTTP/1.1" 404 2270
+WARNING Not Found: /material/admin
+WARNING "GET /material/admin HTTP/1.1" 404 2285
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\my_blog\settings.py changed, reloading.
