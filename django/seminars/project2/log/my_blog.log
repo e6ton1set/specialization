@@ -1736,3 +1736,357 @@ INFO "GET /admin/ HTTP/1.1" 200 7529
 INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 14572
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
 INFO "GET /admin/ HTTP/1.1" 200 7529
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/auth/group/add/ HTTP/1.1" 200 13397
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10360
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 12859
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/add/ HTTP/1.1" 200 12222
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/2/change/ HTTP/1.1" 200 24070
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 13491
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23819
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10141
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/add/ HTTP/1.1" 200 13397
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10573
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 13340
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/add/ HTTP/1.1" 200 12222
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/3/change/ HTTP/1.1" 200 24167
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14004
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10354
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/add/ HTTP/1.1" 200 13397
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10790
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 13845
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/add/ HTTP/1.1" 200 12222
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/4/change/ HTTP/1.1" 200 24166
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14479
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10569
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/group/add/ HTTP/1.1" 200 13397
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/group/ HTTP/1.1" 200 10993
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14324
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/add/ HTTP/1.1" 200 12222
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/5/change/ HTTP/1.1" 200 24224
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14968
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 7010
+INFO "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 10583
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14741
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/5/change/ HTTP/1.1" 200 23984
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14958
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/3/change/ HTTP/1.1" 200 24018
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14946
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/4/change/ HTTP/1.1" 200 24004
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14948
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23958
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14944
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/auth/user/4/change/ HTTP/1.1" 200 24004
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO "GET /admin/auth/user/ HTTP/1.1" 200 14942
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 6271
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 13126
+INFO "GET /admin/base_blog_app/article/50/change/ HTTP/1.1" 200 14557
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/base_blog_app/article/50/change/ HTTP/1.1" 302 0
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 13420
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 10140
+INFO "GET /admin/base_blog_app/author/23/change/ HTTP/1.1" 200 11303
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/base_blog_app/author/23/change/ HTTP/1.1" 302 0
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 10376
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 10152
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 13164
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 14626
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 13164
+INFO "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 10568
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/51/change/ HTTP/1.1" 200 15705
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 15713
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 20874
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/30/change/ HTTP/1.1" 200 15656
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/30/change/ HTTP/1.1" 200 15656
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/30/change/ HTTP/1.1" 200 15656
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 14584
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/author/23/change/ HTTP/1.1" 200 12459
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 6936
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 10152
+INFO "GET /admin/base_blog_app/author/23/change/ HTTP/1.1" 200 11373
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/author/ HTTP/1.1" 200 10152
+INFO "GET /admin/ HTTP/1.1" 200 6936
+INFO "GET /admin/base_blog_app/comment/ HTTP/1.1" 200 20706
+INFO "GET /admin/ HTTP/1.1" 200 6936
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 6936
+INFO "GET /admin/ HTTP/1.1" 200 6936
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 29371
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 14626
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 29371
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 29686
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 12173
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/author/22/change/ HTTP/1.1" 200 11301
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 12173
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 12259
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 12152
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 9381
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /admin/base_blog_app/article/52/change/
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (description) specified for Article
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (description) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+ERROR "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 500 135821
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/52/change/ HTTP/1.1" 200 11995
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/base_blog_app/article/52/change/ HTTP/1.1" 302 0
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 29915
+INFO "GET /admin/base_blog_app/article/51/change/ HTTP/1.1" 200 11987
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/base_blog_app/article/51/change/ HTTP/1.1" 302 0
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 29928
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/ HTTP/1.1" 200 30003
+INFO "GET /admin/base_blog_app/article/?q=%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9+%D0%B3%D0%BE%D0%B4 HTTP/1.1" 200 10327
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 30003
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 30673
+INFO "GET /admin/base_blog_app/article/?show_count=16 HTTP/1.1" 200 10711
+INFO "GET /admin/base_blog_app/article/?show_count=5 HTTP/1.1" 200 10661
+INFO "GET /admin/base_blog_app/article/?show_count=2 HTTP/1.1" 200 11535
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 30673
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 16038
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/?show_count=2 HTTP/1.1" 200 12732
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "POST /admin/base_blog_app/article/?show_count=2 HTTP/1.1" 302 0
+INFO "GET /admin/base_blog_app/article/?show_count=2 HTTP/1.1" 200 11631
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 18983
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/base_blog_app/article/? HTTP/1.1" 200 19660
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
