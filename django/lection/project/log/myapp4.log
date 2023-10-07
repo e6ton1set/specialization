@@ -668,3 +668,39 @@ INFO 2023-10-06 18:53:01,006 basehttp 13780 15652 "GET /prefix HTTP/1.1" 301 0
 INFO 2023-10-06 18:53:01,027 basehttp 13780 4572 "GET /prefix/ HTTP/1.1" 200 13
 INFO 2023-10-06 18:53:20,251 basehttp 13780 4572 "GET /__debug__/render_panel/?store_id=242aecebbba540b8897efd34613b0ff0&panel_id=ProfilingPanel HTTP/1.1" 200 50183
 INFO 2023-10-06 18:53:44,592 basehttp 13780 4572 "GET / HTTP/1.1" 200 10149
+INFO 2023-10-07 12:32:18,758 autoreload 11852 10904 Watching for file changes with StatReloader
+INFO 2023-10-07 12:36:02,937 autoreload 7300 1892 Watching for file changes with StatReloader
+INFO 2023-10-07 12:36:45,582 basehttp 7300 13340 "GET / HTTP/1.1" 200 10146
+INFO 2023-10-07 12:36:45,601 basehttp 7300 13400 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2023-10-07 12:36:45,601 basehttp 7300 13340 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2023-10-07 12:36:45,607 basehttp 7300 13860 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2023-10-07 12:36:45,633 basehttp 7300 13860 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2023-10-07 12:36:45,698 log 7300 13860 Not Found: /favicon.ico
+WARNING 2023-10-07 12:36:45,698 basehttp 7300 13860 "GET /favicon.ico HTTP/1.1" 404 12517
+INFO 2023-10-07 12:37:00,066 basehttp 7300 12320 "GET /lection5/db HTTP/1.1" 301 0
+INFO 2023-10-07 12:37:00,097 basehttp 7300 7524 "GET /lection5/db/ HTTP/1.1" 200 10275
+INFO 2023-10-07 12:37:14,870 basehttp 7300 7524 "GET /lection5/db/ HTTP/1.1" 200 10291
+INFO 2023-10-07 12:37:38,257 basehttp 7300 7524 "GET / HTTP/1.1" 200 10592
+WARNING 2023-10-07 12:37:44,031 log 7300 7524 Not Found: /lection5
+WARNING 2023-10-07 12:37:44,031 basehttp 7300 7524 "GET /lection5 HTTP/1.1" 404 12948
+INFO 2023-10-07 12:37:54,797 basehttp 7300 7524 "GET /lection5/db/ HTTP/1.1" 200 10718
+INFO 2023-10-07 12:38:04,818 basehttp 7300 7524 "GET /__debug__/render_panel/?store_id=584085fc670948e7b2fbd89e273757d2&panel_id=RequestPanel HTTP/1.1" 200 1810
+INFO 2023-10-07 12:38:48,112 basehttp 7300 7524 "GET /__debug__/render_panel/?store_id=584085fc670948e7b2fbd89e273757d2&panel_id=SQLPanel HTTP/1.1" 200 5445
+INFO 2023-10-07 12:39:20,945 basehttp 7300 7524 "POST /__debug__/sql_select/ HTTP/1.1" 200 1100
+INFO 2023-10-07 12:39:59,054 basehttp 7300 7524 "GET /lection5/view HTTP/1.1" 200 10841
+INFO 2023-10-07 12:39:59,074 basehttp 7300 14540 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2023-10-07 12:40:01,954 basehttp 7300 14540 "GET /lection5/view/ HTTP/1.1" 200 10704
+INFO 2023-10-07 12:40:15,658 basehttp 7300 14540 "GET /__debug__/render_panel/?store_id=d76786d02ba34d549bfce7e1fda48a39&panel_id=SQLPanel HTTP/1.1" 200 6651
+INFO 2023-10-07 12:40:27,813 basehttp 7300 14540 "GET /__debug__/render_panel/?store_id=d76786d02ba34d549bfce7e1fda48a39&panel_id=ProfilingPanel HTTP/1.1" 200 38798
+WARNING 2023-10-07 12:41:13,527 log 7300 14540 Not Found: /lection5/tenplate
+WARNING 2023-10-07 12:41:13,527 basehttp 7300 14540 "GET /lection5/tenplate HTTP/1.1" 404 13428
+INFO 2023-10-07 12:41:26,172 basehttp 7300 14540 "GET /lection5/template HTTP/1.1" 200 10853
+INFO 2023-10-07 12:41:28,476 basehttp 7300 15332 "GET /lection5/template/ HTTP/1.1" 200 10688
+INFO 2023-10-07 12:41:34,807 basehttp 7300 15332 "GET /__debug__/render_panel/?store_id=a13933b6192e4955b9db70651641c6e1&panel_id=SQLPanel HTTP/1.1" 200 25653
+INFO 2023-10-07 12:41:41,208 basehttp 7300 15332 "GET /__debug__/render_panel/?store_id=a13933b6192e4955b9db70651641c6e1&panel_id=ProfilingPanel HTTP/1.1" 200 34934
+INFO 2023-10-07 12:41:56,443 basehttp 7300 15332 "GET /__debug__/render_panel/?store_id=a13933b6192e4955b9db70651641c6e1&panel_id=TemplatesPanel HTTP/1.1" 200 6972
+INFO 2023-10-07 12:42:40,916 basehttp 7300 15332 "GET /lection5/db/ HTTP/1.1" 200 10718
+INFO 2023-10-07 12:42:46,060 basehttp 7300 15332 "GET /lection5/view/ HTTP/1.1" 200 10704
+INFO 2023-10-07 12:42:52,703 basehttp 7300 15332 "GET /lection5/template/ HTTP/1.1" 200 10688
+INFO 2023-10-07 12:45:12,055 basehttp 7300 15332 "GET /__debug__/render_panel/?store_id=f6b34102bfab4d30a96fa5cb71170b42&panel_id=HistoryPanel HTTP/1.1" 200 27204
+INFO 2023-10-07 12:45:12,065 basehttp 7300 15332 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0

@@ -24,6 +24,7 @@ urlpatterns = [
     path("prefix/", include("myapp.urls")),
     path("lection3/", include("myapp3.urls")),
     path("lection4/", include("myapp4.urls")),
+    path("lection5/", include("myapp5.urls")),
     path("", index),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
