@@ -704,3 +704,4 @@ INFO 2023-10-07 12:42:46,060 basehttp 7300 15332 "GET /lection5/view/ HTTP/1.1" 
 INFO 2023-10-07 12:42:52,703 basehttp 7300 15332 "GET /lection5/template/ HTTP/1.1" 200 10688
 INFO 2023-10-07 12:45:12,055 basehttp 7300 15332 "GET /__debug__/render_panel/?store_id=f6b34102bfab4d30a96fa5cb71170b42&panel_id=HistoryPanel HTTP/1.1" 200 27204
 INFO 2023-10-07 12:45:12,065 basehttp 7300 15332 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+INFO 2023-10-07 13:19:18,208 autoreload 9560 8068 Watching for file changes with StatReloader

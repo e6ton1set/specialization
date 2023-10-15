@@ -19,14 +19,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-s2wqp0q)otb664ium46ub(7#n6vjols6mz=%t_-4xd^h89hle&"
+import os
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     "172.29.166.235",
     "127.0.0.1",
+    "djangoseminars.pythonanywhere.com",
 ]
 
 INTERNAL_IPS = [
@@ -49,6 +54,7 @@ INSTALLED_APPS = [
     "myapp5",
     "myapp6",
     "debug_toolbar",
+    'default_app',
 ]
 
 MIDDLEWARE = [
@@ -89,8 +95,15 @@ WSGI_APPLICATION = "project.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "sqlite3.db",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "djangoseminars$default",
+        "USER": "djangoseminars",
+        "PASSWORD": os.getenv("MYSQL_PASSWORD"),
+        "HOST": "djangoseminars.mysql.pythonanywhere-services.com",
+        "OPTIONS": {
+            "init_command": "SET NAMES 'utf8mb4'; SET sql_mode='STRICT_TRANS_TABLES'",
+            "charset": "utf8mb4",
+        }
     }
 }
 
@@ -127,6 +140,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "static"
+
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 

@@ -4,12 +4,12 @@ WARNING "GET / HTTP/1.1" 404 2276
 WARNING Not Found: /favicon.ico
 WARNING "GET /favicon.ico HTTP/1.1" 404 2327
 INFO "GET /author HTTP/1.1" 301 0
-INFO Чтение авторов (подробности: <WSGIRequest: GET '/author/'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/author/'>
 INFO "GET /author/ HTTP/1.1" 200 0
 WARNING Not Found: /article
 WARNING "GET /article HTTP/1.1" 404 2315
 INFO "GET /articles HTTP/1.1" 301 0
-INFO Чтение авторов (подробности: <WSGIRequest: GET '/articles/'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/articles/'>
 INFO "GET /articles/ HTTP/1.1" 200 0
 INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\my_blog\urls.py changed, reloading.
 INFO Watching for file changes with StatReloader
@@ -67,13 +67,13 @@ INFO "GET /articles_by_author/?name=Name_4 HTTP/1.1" 200 10
 INFO C:\Users\User\PycharmProjects\specialization\django\seminars\project\my_blog\urls.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET / HTTP/1.1" 200 10
-INFO Чтение авторов (подробности: <WSGIRequest: GET '/author/'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/author/'>
 INFO "GET /author/ HTTP/1.1" 200 6
-INFO Чтение публикаций (подробности: <WSGIRequest: GET '/article/'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/article/'>
 INFO "GET /article/ HTTP/1.1" 200 12
-INFO Запрос статей по ID автора: <WSGIRequest: GET '/articles_by_author/?name=Name_4'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ ID пїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/articles_by_author/?name=Name_4'>
 INFO "GET /articles_by_author/?name=Name_4 HTTP/1.1" 200 0
-INFO Запрос статей по ID автора: <WSGIRequest: GET '/articles_by_author/?name=Name_2'>
+INFO пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ ID пїЅпїЅпїЅпїЅпїЅпїЅ: <WSGIRequest: GET '/articles_by_author/?name=Name_2'>
 INFO "GET /articles_by_author/?name=Name_2 HTTP/1.1" 200 12
 INFO Watching for file changes with StatReloader
 INFO Watching for file changes with StatReloader
@@ -883,7 +883,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 75, in create_author_form
-    message.success(request, "Автор успешно создан!")
+    message.success(request, "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!")
     ^^^^^^^^^^^^^^^
 AttributeError: module 'django.core.mail.message' has no attribute 'success'
 ERROR "POST /create_author_form/ HTTP/1.1" 500 69890
@@ -898,7 +898,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 75, in create_author_form
-    message.add_message(request, f"Автор {author.first_name} создан")
+    message.add_message(request, f"пїЅпїЅпїЅпїЅпїЅ {author.first_name} пїЅпїЅпїЅпїЅпїЅпїЅ")
     ^^^^^^^^^^^^^^^^^^^
 AttributeError: module 'django.core.mail.message' has no attribute 'add_message'
 ERROR "POST /create_author_form/ HTTP/1.1" 500 69932
@@ -913,7 +913,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 74, in create_author_form
-    message.add_message(request, f"Автор {author.first_name} создан")
+    message.add_message(request, f"пїЅпїЅпїЅпїЅпїЅ {author.first_name} пїЅпїЅпїЅпїЅпїЅпїЅ")
     ^^^^^^^
 NameError: name 'message' is not defined
 ERROR "POST /create_author_form/ HTTP/1.1" 500 69698
@@ -928,7 +928,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 74, in create_author_form
-    message.add_message(request, message.succes,  f"Автор {author.first_name} создан")
+    message.add_message(request, message.succes,  f"пїЅпїЅпїЅпїЅпїЅ {author.first_name} пїЅпїЅпїЅпїЅпїЅпїЅ")
     ^^^^^^^
 NameError: name 'message' is not defined
 ERROR "POST /create_author_form/ HTTP/1.1" 500 69732
@@ -951,7 +951,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 75, in create_author_form
-    message.add_message(request, message.succes,  f"Автор {author.first_name} создан")
+    message.add_message(request, message.succes,  f"пїЅпїЅпїЅпїЅпїЅ {author.first_name} пїЅпїЅпїЅпїЅпїЅпїЅ")
     ^^^^^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'add_message'
 ERROR "POST /create_author_form/ HTTP/1.1" 500 70230
@@ -966,7 +966,7 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\project2\base_blog_app\views.py", line 75, in create_author_form
-    message.success("Пользователь сохранён")
+    message.success("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ")
     ^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'success'
 ERROR "POST /create_author_form/ HTTP/1.1" 500 70140
@@ -1152,13 +1152,13 @@ Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
     self._clean_fields()
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 440, in _clean_fields
-    value = bf.initial if field.disabled else bf.data
+    value = bf.initial if field.disabled else bf.self
                                               ^^^^^^^
-  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in data
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in self
     return self.form._widget_data_value(self.field.widget, self.html_name)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 220, in _widget_data_value
-    return widget.value_from_datadict(self.data, self.files, html_name)
+    return widget.value_from_datadict(self.self, self.files, html_name)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooleanField' object has no attribute 'value_from_datadict'
 ERROR "POST /create_comment_form/ HTTP/1.1" 500 93665
@@ -1187,13 +1187,13 @@ Traceback (most recent call last):
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 433, in full_clean
     self._clean_fields()
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 440, in _clean_fields
-    value = bf.initial if field.disabled else bf.data
+    value = bf.initial if field.disabled else bf.self
                                               ^^^^^^^
-  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in data
+  File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\boundfield.py", line 135, in self
     return self.form._widget_data_value(self.field.widget, self.html_name)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\forms\forms.py", line 220, in _widget_data_value
-    return widget.value_from_datadict(self.data, self.files, html_name)
+    return widget.value_from_datadict(self.self, self.files, html_name)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooleanField' object has no attribute 'value_from_datadict'
 ERROR "POST /create_comment_form/ HTTP/1.1" 500 93665

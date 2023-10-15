@@ -386,11 +386,11 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py", line 24, in eagle_or_tails
-    return HttpResponse(**data)
+    return HttpResponse(**self)
            ^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\PycharmProjects\specialization\venv\Lib\site-packages\django\http\response.py", line 374, in __init__
     super().__init__(*args, **kwargs)
-TypeError: HttpResponseBase.__init__() got an unexpected keyword argument 'Îð¸ë'
+TypeError: HttpResponseBase.__init__() got an unexpected keyword argument 'ï¿½ï¿½ï¿½'
 ERROR 2023-09-24 16:18:13,407 basehttp 7412 12956 "GET /test/game1/ HTTP/1.1" 500 72539
 INFO 2023-09-24 16:18:17,711 autoreload 7412 11132 C:\Users\User\PycharmProjects\specialization\django\seminars\testapp\views.py changed, reloading.
 INFO 2023-09-24 16:18:18,129 autoreload 11788 9544 Watching for file changes with StatReloader
